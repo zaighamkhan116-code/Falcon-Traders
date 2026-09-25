@@ -76,3 +76,12 @@ header{background-image:none!important;background-color:transparent!important}
 
 /* 80% transparent black band behind brand through Mode button */
 .hero-zone header{background:rgba(0,0,0,.20)!important}
+
+/* Unified truck-photo dashboard: no individual backgrounds, 70% transparent black overlay */
+.hero-zone{position:relative;background:url("/Truck.jpg") center/cover no-repeat!important}
+.hero-zone::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.30);pointer-events:none;z-index:0}
+.hero-zone>header,.hero-zone>main{position:relative;z-index:1}
+.hero-zone header{background:transparent!important}
+.hero-zone .dashboard-row>div,.hero-zone .cycle-control,.hero-zone .summary div{background:transparent!important;border:0!important;box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+.hero-zone .dashboard-row span,.hero-zone .dashboard-row strong,.hero-zone .cycle-control span{color:#fff}
+.hero-zone .dashboard-row .count-box{background:transparent!important;border:1px solid rgba(255,255,255,.8)!important;color:#fff}
