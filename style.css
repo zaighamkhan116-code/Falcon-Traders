@@ -207,3 +207,47 @@ body:not(.view-mode) #editCount{display:inline-flex!important;visibility:visible
  .hero-zone .dashboard-row>div,.hero-zone .dashboard-row .vehicle-summary{height:56px!important;min-height:56px!important;padding:4px 3px!important}
  body.view-mode #editCount{display:none!important;visibility:hidden!important}
 }
+
+
+/* Mobile dashboard typography/alignment correction */
+.hero-zone .dashboard-row>div,
+.hero-zone .dashboard-row .vehicle-summary{
+  box-sizing:border-box!important;
+  padding:4px 7px!important;
+  overflow:hidden!important;
+}
+.hero-zone .dashboard-row span,
+.hero-zone .dashboard-row strong,
+.hero-zone .dashboard-row .count-box{
+  font-size:14px!important;
+  line-height:1.05!important;
+}
+.hero-zone .dashboard-row span{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  min-height:15px!important;
+  padding:0 2px!important;
+  white-space:nowrap!important;
+}
+.hero-zone .dashboard-row strong,
+.hero-zone .dashboard-row .count-box{
+  font-weight:800!important;
+  margin-top:4px!important;
+}
+body.view-mode #editCount{
+  display:none!important;
+  visibility:hidden!important;
+  width:0!important;
+  height:0!important;
+  padding:0!important;
+  margin:0!important;
+  border:0!important;
+}
+@media(max-width:700px){
+  .hero-zone .dashboard-row>div,
+  .hero-zone .dashboard-row .vehicle-summary{padding:4px 6px!important}
+  .hero-zone .dashboard-row span,
+  .hero-zone .dashboard-row strong,
+  .hero-zone .dashboard-row .count-box{font-size:14px!important}
+}
