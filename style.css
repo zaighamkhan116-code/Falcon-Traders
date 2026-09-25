@@ -16,3 +16,10 @@
 header{background-image:linear-gradient(90deg,rgba(13,57,119,.82) 0%,rgba(22,82,145,.48) 48%,rgba(20,78,137,.20) 100%),url("https://images.unsplash.com/photo-1578319439584-104c94d37305?auto=format&fit=crop&w=1600&q=85");background-position:center 52%;background-size:cover}
 .wing{filter:none;color:#082f66;text-shadow:0 1px 1px #ffffff80}
 @media(max-width:700px){header{background-position:62% 50%;background-size:cover}.wing{color:#082f66}}
+
+/* Exact uploaded truck photo across header + dashboard, ending before Cycle 1 */
+.hero-zone{background-image:linear-gradient(rgba(225,242,252,.62),rgba(225,242,252,.72)),url("/Truck.jpg");background-size:cover;background-position:center;background-repeat:no-repeat;padding-bottom:1px}
+.hero-zone header{background:linear-gradient(90deg,rgba(13,57,119,.90),rgba(25,91,158,.55),rgba(13,57,119,.30));}
+.hero-zone main{background:transparent}
+.hero-zone .cycle-control,.hero-zone .summary div{background:rgba(255,255,255,.90);backdrop-filter:blur(2px)}
+@media(max-width:700px){.hero-zone{background-position:center top}.hero-zone header{background:linear-gradient(90deg,rgba(13,57,119,.92),rgba(25,91,158,.48),rgba(13,57,119,.22))}}
