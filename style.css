@@ -140,3 +140,13 @@ header{background-image:none!important;background-color:transparent!important}
  .hero-zone main{padding:66px 8px 6px!important}
  .hero-zone .dashboard-row{position:relative!important;left:auto!important;right:auto!important;bottom:auto!important;top:auto!important;width:100%!important;margin:0!important}
 }
+
+/* Center dashboard content and refine Mode/vehicle controls */
+.mode-btn{font-weight:800}
+.mode-btn .mode-label{font-weight:400}
+.hero-zone .dashboard-row>div{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;text-align:center!important}
+.hero-zone .dashboard-row span,.hero-zone .dashboard-row strong{text-align:center!important;width:100%}
+.hero-zone .dashboard-row .vehicle-setting{justify-content:center!important;width:100%}
+.hero-zone .dashboard-row .count-box{font-size:15px!important;display:grid!important;place-items:center!important;text-align:center!important}
+.view-mode .dashboard-row .edit-count{display:none!important}
+body:not(.view-mode) .dashboard-row .edit-count{display:inline-flex!important;align-items:center!important;justify-content:center!important}
