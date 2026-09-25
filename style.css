@@ -321,3 +321,39 @@ body.view-mode #editCount{
   padding:0!important;
   line-height:1!important;
 }
+
+
+/* Main cycle table: Date | Vehicle Number | Status | Payment */
+.vehicle-table-head,.vehicle-row.vehicle-grid{
+  display:grid!important;
+  grid-template-columns:1.15fr 1.35fr 1fr 1fr!important;
+  align-items:center!important;
+  column-gap:6px!important;
+  width:100%!important;
+  box-sizing:border-box!important;
+}
+.vehicle-table-head{
+  padding:10px 14px 8px!important;
+  font-size:12px!important;
+  font-weight:800!important;
+  text-align:center!important;
+  border-bottom:1px solid #e5e7eb!important;
+}
+.vehicle-row.vehicle-grid{
+  padding:14px!important;
+  text-align:center!important;
+}
+.vehicle-row.vehicle-grid>span{
+  min-width:0!important;
+  text-align:center!important;
+  overflow-wrap:anywhere!important;
+}
+.delivery-status{font-weight:700!important}
+@media(max-width:700px){
+  .vehicle-table-head,.vehicle-row.vehicle-grid{
+    grid-template-columns:1.15fr 1.35fr 1fr 1fr!important;
+    column-gap:3px!important;
+  }
+  .vehicle-table-head{padding:9px 7px 7px!important;font-size:10px!important}
+  .vehicle-row.vehicle-grid{padding:13px 7px!important;font-size:11px!important}
+}
