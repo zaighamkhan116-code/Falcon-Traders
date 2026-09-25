@@ -301,3 +301,23 @@ body.view-mode #editCount{
   .hero-zone .dashboard-row strong,
   .hero-zone .dashboard-row .count-box{font-size:9.8px!important}
 }
+
+
+/* Align Vehicles in Cycle content exactly with the other dashboard cards */
+.hero-zone .dashboard-row .vehicle-summary > span{
+  flex:none!important;
+}
+.hero-zone .dashboard-row .vehicle-summary .vehicle-setting{
+  display:block!important;
+  width:100%!important;
+  margin:5px 0 0!important;
+  padding:0!important;
+  line-height:1!important;
+}
+.hero-zone .dashboard-row .vehicle-summary .count-box{
+  display:block!important;
+  width:100%!important;
+  margin:0!important;
+  padding:0!important;
+  line-height:1!important;
+}
