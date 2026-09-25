@@ -73,3 +73,6 @@ header{background-image:linear-gradient(90deg,rgba(13,57,119,.82) 0%,rgba(22,82,
 /* Remove blue header/logo background; show truck photo directly */
 .hero-zone header{background:transparent!important}
 header{background-image:none!important;background-color:transparent!important}
+
+/* 80% transparent black band behind brand through Mode button */
+.hero-zone header{background:rgba(0,0,0,.20)!important}
