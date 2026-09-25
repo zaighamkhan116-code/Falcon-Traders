@@ -251,3 +251,53 @@ body.view-mode #editCount{
   .hero-zone .dashboard-row strong,
   .hero-zone .dashboard-row .count-box{font-size:14px!important}
 }
+
+
+/* Dashboard: uniform smaller type and equal top/bottom justification */
+.hero-zone .dashboard-row>div,
+.hero-zone .dashboard-row .vehicle-summary{
+  height:56px!important;
+  min-height:56px!important;
+  padding:0 5px!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  text-align:center!important;
+}
+.hero-zone .dashboard-row span,
+.hero-zone .dashboard-row strong,
+.hero-zone .dashboard-row .count-box{
+  font-size:9.8px!important;
+  line-height:1!important;
+  text-align:center!important;
+  width:100%!important;
+}
+.hero-zone .dashboard-row span{
+  min-height:10px!important;
+  padding:0!important;
+  margin:0!important;
+  display:block!important;
+  white-space:nowrap!important;
+}
+.hero-zone .dashboard-row strong{
+  margin:5px 0 0!important;
+}
+.hero-zone .dashboard-row .vehicle-setting{
+  width:100%!important;
+  height:auto!important;
+  margin:5px 0 0!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+}
+.hero-zone .dashboard-row .count-box{
+  margin:0!important;
+}
+@media(max-width:700px){
+  .hero-zone .dashboard-row>div,
+  .hero-zone .dashboard-row .vehicle-summary{padding:0 5px!important}
+  .hero-zone .dashboard-row span,
+  .hero-zone .dashboard-row strong,
+  .hero-zone .dashboard-row .count-box{font-size:9.8px!important}
+}
