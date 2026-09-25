@@ -85,3 +85,24 @@ header{background-image:none!important;background-color:transparent!important}
 .hero-zone .dashboard-row>div,.hero-zone .cycle-control,.hero-zone .summary div{background:transparent!important;border:0!important;box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
 .hero-zone .dashboard-row span,.hero-zone .dashboard-row strong,.hero-zone .cycle-control span{color:#fff}
 .hero-zone .dashboard-row .count-box{background:transparent!important;border:1px solid rgba(255,255,255,.8)!important;color:#fff}
+
+/* Header + bottom-aligned dashboard refinement */
+.hero-zone{display:flex;flex-direction:column;min-height:275px}
+.hero-zone header{padding-top:22px!important}
+.hero-zone .brand h1{font-size:39px!important;line-height:1}
+.hero-zone .brand p{font-size:20px!important;line-height:1.15;margin-top:5px!important}
+.hero-zone .wing{font-size:64px!important;line-height:1;min-width:62px;display:flex;align-items:center;justify-content:center;align-self:stretch}
+.hero-zone main{margin-top:auto!important;width:100%;padding-bottom:8px!important}
+.hero-zone .dashboard-row{margin-top:auto!important;margin-bottom:0!important}
+.hero-zone .dashboard-row>div{border:1px solid #fff!important;border-radius:8px!important}
+@media(max-width:700px){
+ .hero-zone{min-height:275px}
+ .hero-zone header{padding:18px 17px 8px!important}
+ .hero-zone .brand{gap:9px}
+ .hero-zone .brand h1{font-size:31px!important}
+ .hero-zone .brand p{font-size:17px!important}
+ .hero-zone .wing{font-size:55px!important;min-width:52px}
+ .hero-zone main{padding:0 8px 7px!important}
+ .hero-zone .dashboard-row{align-items:end}
+ .hero-zone .dashboard-row>div{border:1px solid rgba(255,255,255,.95)!important}
+}
