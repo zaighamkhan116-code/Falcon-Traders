@@ -69,3 +69,7 @@ header{background-image:linear-gradient(90deg,rgba(13,57,119,.82) 0%,rgba(22,82,
 .hero-zone .dashboard-row .count-box{background:rgba(0,0,0,.15);border:1px solid rgba(255,255,255,.90);color:#fff}
 .hero-zone .dashboard-row .edit-count{color:#fff}
 .hero-zone .dashboard-row .stepper button{background:rgba(0,0,0,.20);border:1px solid rgba(255,255,255,.90);color:#fff}
+
+/* Remove blue header/logo background; show truck photo directly */
+.hero-zone header{background:transparent!important}
+header{background-image:none!important;background-color:transparent!important}
