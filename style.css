@@ -129,3 +129,14 @@ header{background-image:none!important;background-color:transparent!important}
  .hero-zone{height:440px!important;min-height:440px!important}
  .hero-zone .dashboard-row{top:auto!important;bottom:8px!important}
 }
+
+/* Compress truck hero: end immediately below the four dashboard blocks */
+.hero-zone{height:auto!important;min-height:0!important;padding-bottom:0!important}
+.hero-zone header{padding-bottom:8px!important}
+.hero-zone main{position:relative!important;padding-top:68px!important;padding-bottom:6px!important}
+.hero-zone .dashboard-row{position:relative!important;left:auto!important;right:auto!important;bottom:auto!important;top:auto!important;width:100%!important;margin:0!important}
+@media(max-width:700px){
+ .hero-zone{height:auto!important;min-height:0!important}
+ .hero-zone main{padding:66px 8px 6px!important}
+ .hero-zone .dashboard-row{position:relative!important;left:auto!important;right:auto!important;bottom:auto!important;top:auto!important;width:100%!important;margin:0!important}
+}
