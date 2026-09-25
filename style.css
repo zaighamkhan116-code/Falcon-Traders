@@ -121,3 +121,11 @@ header{background-image:none!important;background-color:transparent!important}
 @media(max-width:700px){
  .hero-zone .dashboard-row{left:2%!important;right:2%!important;bottom:5px!important;width:96%!important;margin:0!important}
 }
+
+/* Correct placement: dashboard immediately above bottom edge of truck photo */
+.hero-zone{min-height:440px!important}
+.hero-zone .dashboard-row{position:absolute!important;left:2%!important;right:2%!important;top:auto!important;bottom:8px!important;width:96%!important;margin:0!important}
+@media(max-width:700px){
+ .hero-zone{height:440px!important;min-height:440px!important}
+ .hero-zone .dashboard-row{top:auto!important;bottom:8px!important}
+}
