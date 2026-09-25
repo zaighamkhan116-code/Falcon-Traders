@@ -150,3 +150,14 @@ header{background-image:none!important;background-color:transparent!important}
 .hero-zone .dashboard-row .count-box{font-size:15px!important;display:grid!important;place-items:center!important;text-align:center!important}
 .view-mode .dashboard-row .edit-count{display:none!important}
 body:not(.view-mode) .dashboard-row .edit-count{display:inline-flex!important;align-items:center!important;justify-content:center!important}
+
+/* Match first dashboard card to the other three */
+.hero-zone .dashboard-row>div{height:86px!important;min-height:86px!important}
+.hero-zone .dashboard-row .vehicle-summary{height:86px!important;min-height:86px!important}
+.hero-zone .dashboard-row .count-box{font-size:15px!important;width:auto!important;height:auto!important;min-width:0!important;border:0!important;background:transparent!important;padding:0!important;line-height:1.05!important}
+.view-mode .dashboard-row .edit-count{display:none!important}
+@media(max-width:700px){
+ .hero-zone .dashboard-row>div,.hero-zone .dashboard-row .vehicle-summary{height:86px!important;min-height:86px!important}
+ .hero-zone .dashboard-row .count-box{font-size:15px!important;width:auto!important;height:auto!important;border:0!important;padding:0!important}
+ .view-mode .dashboard-row .edit-count{display:none!important}
+}
