@@ -48,3 +48,18 @@ header{background-image:linear-gradient(90deg,rgba(13,57,119,.82) 0%,rgba(22,82,
  .dashboard-row .vehicle-setting{gap:3px}
  .dashboard-row .count-box{width:27px;height:24px;font-size:11px}
 }
+/* Smaller, 80% transparent dashboard cards */
+.hero-zone .summary div{background:rgba(255,255,255,.20);box-shadow:none}
+.dashboard-row{gap:5px}
+.dashboard-row>div{padding:6px 7px;min-height:58px}
+.dashboard-row span{font-size:10px;line-height:1.05;min-height:0}
+.dashboard-row strong{font-size:15px;line-height:1.05;margin-top:2px}
+.dashboard-row .vehicle-setting{margin-top:2px}
+@media(max-width:700px){
+ .dashboard-row{gap:4px;margin-bottom:6px}
+ .dashboard-row>div,.dashboard-row .vehicle-summary{padding:5px 5px;min-height:54px;border-radius:7px}
+ .dashboard-row span{font-size:8.5px;line-height:1}
+ .dashboard-row strong{font-size:13px;margin-top:2px}
+ .dashboard-row .count-box{width:25px;height:21px;font-size:10px;background:rgba(255,255,255,.38)}
+ .dashboard-row .edit-count{height:21px;font-size:9px}
+}
