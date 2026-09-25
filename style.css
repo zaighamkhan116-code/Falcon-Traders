@@ -23,3 +23,15 @@ header{background-image:linear-gradient(90deg,rgba(13,57,119,.82) 0%,rgba(22,82,
 .hero-zone main{background:transparent}
 .hero-zone .cycle-control,.hero-zone .summary div{background:rgba(255,255,255,.90);backdrop-filter:blur(2px)}
 @media(max-width:700px){.hero-zone{background-position:center top}.hero-zone header{background:linear-gradient(90deg,rgba(13,57,119,.92),rgba(25,91,158,.48),rgba(13,57,119,.22))}}
+
+/* Original truck photo: no blur/frosting, compact 3-card summary */
+.hero-zone{background-image:url("/Truck.jpg");background-size:cover;background-position:center;background-repeat:no-repeat}
+.hero-zone .cycle-control,.hero-zone .summary div{backdrop-filter:none;-webkit-backdrop-filter:none;background:rgba(255,255,255,.88)}
+.summary{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+@media(max-width:700px){
+ .hero-zone{background-position:center;background-size:cover}
+ .summary{grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;margin-bottom:10px}
+ .summary div{padding:7px 6px;border-radius:8px}
+ .summary span{font-size:9px;min-height:11px;white-space:nowrap}
+ .summary strong{font-size:14px;margin-top:2px}
+}
