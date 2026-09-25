@@ -12,3 +12,7 @@
  .summary span{font-size:9px;line-height:1.15;min-height:21px}
  .summary strong{font-size:15px;margin-top:3px;white-space:nowrap}
 }header{position:relative;overflow:hidden;background:linear-gradient(90deg,#0d3977e8,#1c5ea6d9),url("https://images.unsplash.com/photo-1578319439584-104c94d37305?auto=format&fit=crop&w=1600&q=75") center/cover no-repeat}.brand{position:relative;z-index:1}.wing{font-size:34px;transform:none;filter:grayscale(1) brightness(0) invert(1)}@media(max-width:700px){header{background-position:center}.wing{font-size:30px}}
+/* Brand header visibility refinement */
+header{background-image:linear-gradient(90deg,rgba(13,57,119,.82) 0%,rgba(22,82,145,.48) 48%,rgba(20,78,137,.20) 100%),url("https://images.unsplash.com/photo-1578319439584-104c94d37305?auto=format&fit=crop&w=1600&q=85");background-position:center 52%;background-size:cover}
+.wing{filter:none;color:#082f66;text-shadow:0 1px 1px #ffffff80}
+@media(max-width:700px){header{background-position:62% 50%;background-size:cover}.wing{color:#082f66}}
