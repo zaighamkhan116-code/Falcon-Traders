@@ -1,33 +1,8 @@
-<!doctype html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Falcon Traders</title><link rel="stylesheet" href="/style.css"></head>
-<body>
-<header><div class="brand"><div class="wing">➤</div><div><h1>Falcon Traders</h1><p>Coal Supply Management</p></div></div></header>
-<main>
-<section class="summary">
-<div><span>Total Loads</span><strong id="loads">0</strong></div>
-<div><span>Pending Payments</span><strong id="pending">0</strong></div>
-<div><span>Total Net Profit</span><strong id="profit">Rs 0</strong></div>
-</section>
-<section class="sheet">
-<div class="sheet-head"><h2>Transactions</h2><input id="search" placeholder="Search company or vehicle"></div>
-<div class="table-wrap"><table><thead><tr><th>Date</th><th>Company</th><th>Vehicle No.</th><th>Received Weight</th><th>Purchase Weight</th><th>Purchase Rate</th><th>Sale Rate</th><th>Net Profit</th><th>Payment Status</th></tr></thead><tbody id="rows"></tbody></table></div>
-<div id="empty" class="empty">No transactions yet. Tap + to add the first entry.</div>
-</section>
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Falcon Traders</title><link rel="stylesheet" href="/style.css"></head><body>
+<header><div class="brand"><div class="wing">➤</div><div><h1>Falcon Traders</h1><p>Coal Supply Management</p></div></div></header><main>
+<section class="cycle-control"><div><span>VEHICLES PER NEXT CYCLE</span><p>Choose how many vehicle rows to create.</p></div><div class="stepper"><button id="minus">−</button><strong id="vehicleCount">3</strong><button id="plus">+</button></div></section>
+<section class="summary"><div><span>Total Cycles</span><strong id="cycleTotal">0</strong></div><div><span>Total Loads</span><strong id="loads">0</strong></div><div><span>Pending Payments</span><strong id="pending">0</strong></div><div><span>Total Net Profit</span><strong id="profit">Rs 0</strong></div></section>
+<section id="cycles"></section><button id="addCycle" class="add-cycle">+ Add First Cycle</button>
 </main>
-<button id="add" class="fab" aria-label="Add transaction">+</button>
-<div id="overlay" class="overlay hidden"><div class="panel">
-<div class="panel-head"><h2 id="formTitle">New Entry</h2><button id="close">×</button></div>
-<form id="form">
-<label>Date<input name="date" type="date" required></label>
-<label>Company<input name="company" required placeholder="Company name"></label>
-<label>Vehicle No.<input name="vehicle" required placeholder="Vehicle number"></label>
-<label>Received Weight (tons)<input name="received" type="number" step="0.01" min="0" required></label>
-<label>Purchase Weight (tons)<input name="purchaseWeight" type="number" step="0.01" min="0" required></label>
-<label>Purchase Rate (Rs/ton)<input name="purchaseRate" type="number" step="0.01" min="0" required></label>
-<label>Sale Rate (Rs/ton)<input name="saleRate" type="number" step="0.01" min="0" required></label>
-<label>Net Profit (Rs)<input name="netProfit" type="number" step="0.01" required></label>
-<label>Payment Status<select name="payment"><option value="Pending">Pending</option><option value="Received">Received</option></select></label>
-<button class="save" type="submit">Save</button><button id="deleteBtn" class="delete hidden" type="button">Delete Entry</button>
-</form></div></div>
-<script src="/app.js"></script></body></html>
+<div id="overlay" class="overlay hidden"><div class="panel"><div class="panel-head"><div><small id="cycleLabel"></small><h2 id="formTitle">Vehicle Entry</h2></div><button id="close">×</button></div><form id="form">
+<label>Date<input name="date" type="date" required></label><label>Company<input name="company" required placeholder="Company name"></label><label>Vehicle No.<input name="vehicle" required placeholder="Vehicle number"></label><label>Received Weight (tons)<input name="received" type="number" step="0.01" min="0"></label><label>Purchase Weight (tons)<input name="purchaseWeight" type="number" step="0.01" min="0"></label><label>Purchase Rate (Rs/ton)<input name="purchaseRate" type="number" step="0.01" min="0"></label><label>Sale Rate (Rs/ton)<input name="saleRate" type="number" step="0.01" min="0"></label><label>Net Profit (Rs)<input name="netProfit" type="number" step="0.01"></label><label>Payment Status<select name="payment"><option>Pending</option><option>Received</option></select></label><button class="save" type="submit">Save</button></form></div></div><script src="/app.js"></script></body></html>
