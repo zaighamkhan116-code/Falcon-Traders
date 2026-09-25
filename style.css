@@ -35,3 +35,16 @@ header{background-image:linear-gradient(90deg,rgba(13,57,119,.82) 0%,rgba(22,82,
  .summary span{font-size:9px;min-height:11px;white-space:nowrap}
  .summary strong{font-size:14px;margin-top:2px}
 }
+/* Put vehicle count in same compact dashboard line */
+.dashboard-row{grid-template-columns:1.35fr repeat(3,minmax(0,1fr));align-items:stretch}
+.dashboard-row .vehicle-summary{display:flex;flex-direction:column;justify-content:center}
+.dashboard-row .vehicle-setting{margin-top:3px}
+.dashboard-row .count-box{width:30px;height:25px;font-size:12px}
+.dashboard-row .edit-count{height:25px;padding:0 4px;font-size:10px}
+.dashboard-row .stepper button{width:25px;height:25px;font-size:15px}
+@media(max-width:700px){
+ .dashboard-row{grid-template-columns:1.35fr repeat(3,minmax(0,1fr));gap:4px}
+ .dashboard-row .vehicle-summary{padding:7px 5px}
+ .dashboard-row .vehicle-setting{gap:3px}
+ .dashboard-row .count-box{width:27px;height:24px;font-size:11px}
+}
