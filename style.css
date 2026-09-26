@@ -847,3 +847,9 @@ body .summary-status{background:#3e3121!important;color:#ffdaa7!important}body .
 body .data-notice{background:#183448!important;color:#e3f3fd!important;border-color:#6294ae!important}
 body .data-notice button{background:#166a9d!important;color:#fff!important}
 @media(max-width:700px){body .hero-zone .dashboard-row>div,body .hero-zone .dashboard-row .vehicle-summary{height:72px!important;min-height:72px!important}body .hero-zone .dashboard-row>div:nth-child(3){height:62px!important;min-height:62px!important}body .hero-zone .summary.dashboard-row{gap:6px!important;padding:0 8px 8px!important}body .records-main{padding:15px 8px 20px!important}}
+
+/* Override older per-column fills and keep status meaning visible. */
+body .vehicle-table-head>span:nth-child(n){background:#244457!important;background-color:#244457!important;color:#e4f6ff!important}
+body .vehicle-list .vehicle-row.vehicle-grid>span.delivery-status.en-route{color:#9cddff!important}
+body .vehicle-list .vehicle-row.vehicle-grid>span.status.pending{color:var(--mc-amber)!important}
+body .vehicle-list .vehicle-row.vehicle-grid>span.status.received{color:var(--mc-green)!important}
