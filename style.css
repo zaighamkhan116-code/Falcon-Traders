@@ -1164,3 +1164,59 @@ body .panel #form .upload-preview .file-size-note{
   font-size:.715rem!important;
   white-space:nowrap!important;
 }
+
+
+/* Received profit card opens a compact, readable breakdown. */
+body .hero-zone .dashboard-row #profitCard{cursor:pointer!important}
+body .hero-zone .dashboard-row #profitCard:hover{border-color:#89d7a8!important;background:rgba(0,0,0,.42)!important}
+body .hero-zone .dashboard-row #profitCard:focus-visible{outline:3px solid #22c55e!important;outline-offset:2px!important}
+body .profit-overlay{
+  position:fixed;
+  inset:0;
+  z-index:35;
+  display:grid;
+  place-items:center;
+  padding:18px;
+  background:rgba(2,8,16,.84);
+}
+body .profit-panel{
+  width:min(560px,100%);
+  max-height:calc(100dvh - 36px);
+  overflow:auto;
+  padding:20px;
+  border:1px solid #4a7086;
+  border-radius:16px;
+  background:#101f2d;
+  color:#edf7ff;
+  box-shadow:0 22px 60px #000a;
+}
+body .profit-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+body .profit-top h2{margin:0;font-size:1.35rem;font-weight:650;color:#f0f9ff}
+body .profit-top button{
+  width:38px;
+  height:38px;
+  flex:none;
+  border:1px solid #87ceeb;
+  border-radius:8px;
+  background:rgba(0,0,0,.25)!important;
+  color:#fff;
+  font-size:25px;
+  line-height:1;
+  cursor:pointer;
+}
+body .profit-panel>p{margin:7px 0 16px;color:#a9c3d1;font-size:.88rem}
+body .profit-table-wrap{overflow:auto;border:1px solid #45697e;border-radius:9px}
+body .profit-table{width:100%;border-collapse:collapse;table-layout:fixed}
+body .profit-table th,body .profit-table td{padding:12px 8px;text-align:center;overflow-wrap:anywhere}
+body .profit-table th{background:#203e52;color:#e9f7ff;font-size:.85rem;font-weight:650}
+body .profit-table td{border-top:1px solid #38586b;background:#132c3c;color:#edf7ff;font-size:.87rem}
+body .profit-table tr:nth-child(even) td{background:#193447}
+body .profit-table td:last-child{color:#22c55e;font-weight:700}
+body .profit-table .profit-empty{color:#b9ccd8!important;font-weight:400!important}
+body .profit-total{display:flex;justify-content:space-between;gap:12px;padding:15px 3px 0;color:#eef8ff;font-size:.95rem}
+body .profit-total strong{color:#22c55e;font-size:1.1rem}
+@media(max-width:700px){
+  body .profit-panel{padding:15px}
+  body .profit-table th,body .profit-table td{padding:12px 4px;font-size:.75rem}
+  body .profit-top h2{font-size:1.15rem}
+}
