@@ -405,3 +405,48 @@ main,
 }
 
 .delete-cycle{background-color:var(--falcon-surface-grey)!important}
+
+
+/* Darker neutral-grey content surfaces. Keep dashboard stat blocks on hero image intact. */
+:root{--falcon-surface-grey:#b9bdc3}
+
+/* Restore the four dashboard summary blocks to their original translucent hero treatment */
+.stats,
+.stats-grid,
+.summary-grid,
+.dashboard-stats{background:transparent!important}
+
+.stat,
+.stat-card,
+.summary-card,
+.metric-card{
+  background:rgba(15,23,42,.36)!important;
+  color:#fff!important;
+  border-color:rgba(255,255,255,.9)!important;
+}
+
+/* Darker grey for content below the hero */
+body,
+main,
+#cycles,
+.app-content,
+.cycle-card,
+.vehicle-row,
+.vehicle-table-head,
+.vehicle-table-row,
+.modal,
+.modal-content,
+.sheet,
+.sheet-content,
+input,
+select,
+textarea,
+.card,
+.panel{
+  background-color:var(--falcon-surface-grey)!important;
+}
+
+/* Keep cycle cards readable while still grey, not white */
+.cycle-card{background-color:#c5c8cd!important}
+.vehicle-table-head{background-color:#aeb3ba!important}
+.vehicle-row,.vehicle-table-row{background-color:#b9bdc3!important}
