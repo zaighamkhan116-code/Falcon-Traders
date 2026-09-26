@@ -1247,3 +1247,7 @@ body .cycle .vehicle-table-head{background:rgba(0,0,0,.60)!important;background-
 /* Heading row is 60% transparent (40% opaque); keep its cells transparent. */
 body .cycle .vehicle-table-head{background:rgba(0,0,0,.40)!important;background-color:rgba(0,0,0,.40)!important}
 body .cycle .vehicle-table-head>span{background:transparent!important;background-color:transparent!important}
+
+/* Blue heading fill at 60% transparency. */
+body .cycle .vehicle-table-head{background:rgba(30,110,190,.40)!important;background-color:rgba(30,110,190,.40)!important}
+body .cycle .vehicle-table-head>span{background:transparent!important;background-color:transparent!important}
