@@ -947,3 +947,6 @@ body .view-details #form input.net-profit-auto:disabled{
 /* Match the date control height to the remaining form inputs. */
 body .panel #form .date-field input[name="date"]{height:auto!important;min-height:0!important}
 body .panel #form .date-field #calendarDate{height:100%!important}
+
+/* Vehicle number title stays white in the details panel. */
+body .panel .panel-head #formTitle{color:#fff!important}
