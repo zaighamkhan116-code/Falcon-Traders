@@ -588,3 +588,8 @@ main{
 .vehicle-table-head>*,.vehicle-row.vehicle-grid>span{background:transparent!important;border-right:2px solid #000!important;border-bottom:0!important;outline:0!important;display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important}
 .vehicle-table-head>*:last-child,.vehicle-row.vehicle-grid>span:last-child{border-right:0!important}
 .vehicle-row.vehicle-grid+.vehicle-row.vehicle-grid{margin-top:0!important}
+
+/* Join table header directly to body; remove inherited separator spacing */
+.vehicle-table-head{margin-bottom:0!important}
+.vehicle-table-head + .vehicle-row.vehicle-grid{margin-top:0!important}
+.vehicle-row.vehicle-grid{margin-top:0!important}
