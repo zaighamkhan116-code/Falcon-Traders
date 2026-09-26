@@ -871,3 +871,14 @@ body .records-main #addCycle{
   border:1px solid #70bad5!important;
   box-shadow:none!important;
 }
+
+/* Total Vehicles edit action: 70% transparent with a sky-blue border. */
+body .hero-zone .dashboard-row #editCount{
+  background:rgba(0,0,0,.30)!important;
+  background-color:rgba(0,0,0,.30)!important;
+  border:1px solid #87ceeb!important;
+  border-radius:6px!important;
+  color:#d9f5ff!important;
+  padding:5px 9px!important;
+  height:auto!important;
+}
