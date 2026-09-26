@@ -734,3 +734,6 @@ body.view-mode .upload-slips label:has(input[type="file"]){display:block!importa
 .image-viewer.hidden{display:none!important}
 .image-viewer img{max-width:100%;max-height:92vh;object-fit:contain;border-radius:8px}
 #closeImageViewer{position:absolute;top:max(18px,env(safe-area-inset-top));right:18px;width:44px;height:44px;border:0;border-radius:50%;background:rgba(255,255,255,.9);font-size:30px;line-height:40px;color:#111;z-index:10001}
+
+/* Keep file selection exclusive to Edit mode, including inside #form. */
+body.view-mode #form .upload-slips input[type="file"]{display:none!important}
