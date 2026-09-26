@@ -1049,3 +1049,22 @@ body .view-details #form input.net-profit-auto:disabled{
   color:#22c55e!important;
   -webkit-text-fill-color:#22c55e!important;
 }
+
+
+/* Paired entry fields stay side by side in Editor and View Mode. */
+body .panel #form .form-pair{
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:12px!important;
+  align-items:start!important;
+}
+body .panel #form .form-pair>label{display:block!important;min-width:0!important;margin:0!important}
+body .panel #form .form-pair input{width:100%!important;min-width:0!important}
+body .panel #form .upload-slips .view-slips-heading{display:none!important}
+body .view-details #form .upload-slips .edit-slips-heading,
+body .view-details #form .upload-slips>p{display:none!important}
+body .view-details #form .upload-slips .view-slips-heading{display:inline!important}
+@media(max-width:700px){
+  body .panel #form .form-pair{gap:10px!important}
+  body .panel #form .form-pair>label{font-size:.78rem!important;line-height:1.3!important}
+}
