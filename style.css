@@ -487,3 +487,24 @@ main{
     margin-top:-100px!important;
   }
 }
+
+
+/* Remove the grey strip/surface behind the four dashboard blocks */
+.stats,
+.stats-grid,
+.summary-grid,
+.dashboard-stats,
+.stats-wrap,
+.summary-wrap,
+.metrics-wrap{
+  background:transparent!important;
+  background-color:transparent!important;
+}
+
+/* Keep individual blocks translucent, with no shared grey backing */
+.stat,
+.stat-card,
+.summary-card,
+.metric-card{
+  background:rgba(15,23,42,.36)!important;
+}
