@@ -768,3 +768,6 @@ body.view-mode #form .upload-slips input[type="file"]{display:none!important}
 .password-actions #cancelPassword,.password-actions #unlockEdit{font-size:1.4em;min-height:54px}
 .password-actions #cancelPassword{flex:1.4}
 .password-actions #unlockEdit{flex:1;background:#123a78!important;border-color:#123a78!important;color:#fff!important}
+
+.data-notice{max-width:1200px;margin:12px auto;padding:14px 16px;border:1px solid #9bb5d4;border-radius:9px;background:#eaf1fb;color:#14213d;font-size:15px}
+.data-notice button{display:block;margin-top:10px;padding:10px 14px;border:1px solid #fff;border-radius:8px;background:#123a78!important;color:#fff;font-weight:700;cursor:pointer}
