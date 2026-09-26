@@ -882,3 +882,36 @@ body .hero-zone .dashboard-row #editCount{
   padding:5px 9px!important;
   height:auto!important;
 }
+
+/* Vehicle details: lighter, smaller typography and a translucent close control. */
+body .panel .panel-head #close{
+  background:rgba(0,0,0,.20)!important;
+  background-color:rgba(0,0,0,.20)!important;
+  border:1px solid #87ceeb!important;
+  border-radius:7px!important;
+  color:#fff!important;
+  width:40px;
+  height:40px;
+  line-height:1;
+  font-size:25.6px!important;
+  font-weight:400!important;
+  cursor:pointer;
+}
+body .panel,body .panel *{font-weight:400!important}
+body .panel .panel-head h2{font-size:1.56rem!important;color:#87ceeb!important}
+body .panel .panel-head small{font-size:.845rem!important;color:#87ceeb!important}
+body .panel #form label,body .panel #form .additional-cost-fields legend{font-size:.845rem!important;color:#87ceeb!important}
+body .panel #form .additional-cost-fields legend{font-size:.96rem!important}
+body .panel #form .upload-slips h3{font-size:1.17rem!important;color:#87ceeb!important}
+body .panel #form .upload-slips p{font-size:.845rem!important}
+body .panel #form .upload-preview{font-size:.715rem!important}
+body .panel #form input,body .panel #form select,body .panel #form textarea{
+  font-size:.845rem!important;
+  color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+}
+body .panel.view-details #form input:disabled,body .panel.view-details #form select:disabled,body .panel.view-details #form textarea:disabled,
+body .view-details #form input:disabled,body .view-details #form select:disabled,body .view-details #form textarea:disabled{color:#fff!important;-webkit-text-fill-color:#fff!important}
+body .panel #form .net-profit-auto,body .view-details #form .net-profit-auto:disabled,
+body .panel #form textarea[name="additionalInformation"],body .view-details #form textarea[name="additionalInformation"]:disabled{color:#fff!important;-webkit-text-fill-color:#fff!important}
+body .panel #form #saveBtn{font-size:1.04rem!important;font-weight:400!important}
