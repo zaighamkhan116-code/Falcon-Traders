@@ -651,3 +651,19 @@ main{
 .delivery-status{color:#000!important}
 .delivery-status.en-route{color:#1677e8!important}
 .delivery-status.delivered{color:#000!important}
+
+
+/* Form alignment: every field uses the same full width and edges */
+#form label{display:block!important;width:100%!important;margin:0!important}
+#form input,#form select,#form textarea{
+  display:block!important;
+  width:100%!important;
+  max-width:none!important;
+  min-width:0!important;
+  margin:6px 0 0!important;
+  box-sizing:border-box!important;
+}
+#form textarea{
+  min-height:96px!important;
+  resize:vertical!important;
+}
