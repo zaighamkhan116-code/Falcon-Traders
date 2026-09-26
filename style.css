@@ -1239,3 +1239,7 @@ body .cycle .vehicle-list .vehicle-row.vehicle-grid .empty-cell{color:#9baebb!im
 body .cycle,body .cycle-head,body .cycle .vehicle-table-head,body .cycle .vehicle-list .vehicle-row.vehicle-grid,body .cycle .vehicle-list .vehicle-row.vehicle-grid:nth-child(even){background:rgba(0,0,0,.10)!important;background-color:rgba(0,0,0,.10)!important}
 body .cycle .vehicle-table-head>span,body .cycle .vehicle-list .vehicle-row.vehicle-grid>span{background:transparent!important;background-color:transparent!important}
 body .cycle .vehicle-list .vehicle-row.vehicle-grid:hover{background:rgba(0,0,0,.18)!important}
+
+
+/* Heading row: 60% transparent (40% black surface); data rows remain 90% transparent. */
+body .cycle .vehicle-table-head{background:rgba(0,0,0,.40)!important;background-color:rgba(0,0,0,.40)!important}
