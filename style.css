@@ -915,3 +915,31 @@ body .view-details #form input:disabled,body .view-details #form select:disabled
 body .panel #form .net-profit-auto,body .view-details #form .net-profit-auto:disabled,
 body .panel #form textarea[name="additionalInformation"],body .view-details #form textarea[name="additionalInformation"]:disabled{color:#fff!important;-webkit-text-fill-color:#fff!important}
 body .panel #form #saveBtn{font-size:1.04rem!important;font-weight:400!important}
+
+/* Date field alignment and rounded profit emphasis. */
+body .panel #form .date-field{width:100%!important;margin-top:6px!important}
+body .panel #form .date-field input[name="date"]{
+  width:100%!important;
+  height:48px!important;
+  margin:0!important;
+  text-align:center!important;
+  padding:12px!important;
+  color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+}
+body .panel #form .date-field #calendarDate{
+  inset:0!important;
+  width:100%!important;
+  height:48px!important;
+  margin:0!important;
+  opacity:0!important;
+  color:transparent!important;
+  -webkit-text-fill-color:transparent!important;
+}
+body .view-details #form .date-field #calendarDate{visibility:hidden!important}
+body .panel #form label:has(.net-profit-auto){color:#6ee7a8!important}
+body .panel #form input.net-profit-auto,
+body .view-details #form input.net-profit-auto:disabled{
+  color:#6ee7a8!important;
+  -webkit-text-fill-color:#6ee7a8!important;
+}
