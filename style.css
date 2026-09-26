@@ -580,3 +580,11 @@ main{
 .vehicle-table-head > *:not(:last-child){
   border-right:1px solid rgba(255,255,255,.95)!important;
 }
+
+/* Solid bordered vehicle table — 2026-09-26 */
+.vehicle-table-head,.vehicle-row.vehicle-grid{grid-template-columns:1.05fr 1.28fr .92fr .95fr!important;margin-left:12px!important;margin-right:12px!important;width:auto!important;gap:0!important;padding:0!important}
+.vehicle-table-head{background:#969ca4!important;border:2px solid #000!important;border-bottom:0!important}
+.vehicle-row.vehicle-grid{background:#b7bbc1!important;border-left:2px solid #000!important;border-right:2px solid #000!important;border-bottom:2px solid #000!important}
+.vehicle-table-head>*,.vehicle-row.vehicle-grid>span{background:transparent!important;border-right:2px solid #000!important;border-bottom:0!important;outline:0!important;display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important}
+.vehicle-table-head>*:last-child,.vehicle-row.vehicle-grid>span:last-child{border-right:0!important}
+.vehicle-row.vehicle-grid+.vehicle-row.vehicle-grid{margin-top:0!important}
