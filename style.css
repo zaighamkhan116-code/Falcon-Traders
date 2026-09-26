@@ -1243,3 +1243,7 @@ body .cycle .vehicle-list .vehicle-row.vehicle-grid:hover{background:rgba(0,0,0,
 
 /* Heading row: stronger 60% opacity so it is clearly distinct; data rows remain 90% transparent. */
 body .cycle .vehicle-table-head{background:rgba(0,0,0,.60)!important;background-color:rgba(0,0,0,.60)!important}
+
+/* Heading row is 60% transparent (40% opaque); keep its cells transparent. */
+body .cycle .vehicle-table-head{background:rgba(0,0,0,.40)!important;background-color:rgba(0,0,0,.40)!important}
+body .cycle .vehicle-table-head>span{background:transparent!important;background-color:transparent!important}
