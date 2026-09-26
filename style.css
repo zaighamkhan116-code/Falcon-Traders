@@ -1079,3 +1079,56 @@ body:not(.view-mode) .panel #form input.net-profit-auto[readonly]{
   -webkit-text-fill-color:#22c55e!important;
   opacity:1!important;
 }
+
+
+/* Compact slip upload controls without the browser's file-name placeholder. */
+body .panel #form .upload-slips .slip-picker{
+  position:relative!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  flex-wrap:wrap!important;
+  gap:8px 12px!important;
+  width:100%!important;
+  min-height:40px!important;
+  margin:12px 0 4px!important;
+  cursor:pointer;
+}
+body .panel #form .upload-slips .slip-picker>span:first-child{min-width:0!important}
+body .panel #form .upload-slips .slip-picker .choose-file{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  flex:none!important;
+  min-width:105px!important;
+  min-height:36px!important;
+  padding:6px 12px!important;
+  border:1px solid #87ceeb!important;
+  border-radius:9px!important;
+  background:rgba(0,0,0,.20)!important;
+  color:#f3fbff!important;
+  font-size:.78rem!important;
+  line-height:1.1!important;
+  font-weight:400!important;
+}
+body:not(.view-mode) .panel #form .upload-slips .slip-picker input[type="file"]{
+  position:absolute!important;
+  width:1px!important;
+  height:1px!important;
+  padding:0!important;
+  margin:0!important;
+  opacity:0!important;
+  overflow:hidden!important;
+  border:0!important;
+}
+body .panel #form .upload-slips .slip-picker:focus-within .choose-file{
+  outline:2px solid #87ceeb!important;
+  outline-offset:2px!important;
+}
+body.view-mode .panel #form .upload-slips .slip-picker .choose-file{display:none!important}
+body .panel #form .upload-preview .pending-upload-note{
+  display:block!important;
+  color:#a9daf0!important;
+  font-size:.75rem!important;
+  overflow-wrap:anywhere!important;
+}
