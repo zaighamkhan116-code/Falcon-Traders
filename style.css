@@ -1248,6 +1248,6 @@ body .cycle .vehicle-table-head{background:rgba(0,0,0,.60)!important;background-
 body .cycle .vehicle-table-head{background:rgba(0,0,0,.40)!important;background-color:rgba(0,0,0,.40)!important}
 body .cycle .vehicle-table-head>span{background:transparent!important;background-color:transparent!important}
 
-/* Blue heading fill at 60% transparency. */
-body .cycle .vehicle-table-head{background:rgba(30,110,190,.40)!important;background-color:rgba(30,110,190,.40)!important}
+/* Blue heading fill at 80% transparency. */
+body .cycle .vehicle-table-head{background:rgba(30,110,190,.20)!important;background-color:rgba(30,110,190,.20)!important}
 body .cycle .vehicle-table-head>span{background:transparent!important;background-color:transparent!important}
