@@ -1234,3 +1234,8 @@ body #pendingOverlay .profit-table td:last-child,body #pendingOverlay .profit-to
 /* Unfilled vehicle slots show a subtle Add action and neutral placeholders. */
 body .cycle .vehicle-list .vehicle-row.vehicle-grid .add-prompt{display:inline-block;color:#9baebb!important;font-size:.78em!important;font-weight:400!important;letter-spacing:.01em}
 body .cycle .vehicle-list .vehicle-row.vehicle-grid .empty-cell{color:#9baebb!important;font-weight:400!important}
+
+/* Shift card and table surfaces are black at 10% opacity (90% transparent). */
+body .cycle,body .cycle-head,body .cycle .vehicle-table-head,body .cycle .vehicle-list .vehicle-row.vehicle-grid,body .cycle .vehicle-list .vehicle-row.vehicle-grid:nth-child(even){background:rgba(0,0,0,.10)!important;background-color:rgba(0,0,0,.10)!important}
+body .cycle .vehicle-table-head>span,body .cycle .vehicle-list .vehicle-row.vehicle-grid>span{background:transparent!important;background-color:transparent!important}
+body .cycle .vehicle-list .vehicle-row.vehicle-grid:hover{background:rgba(0,0,0,.18)!important}
