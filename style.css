@@ -524,3 +524,19 @@ main{
   background:transparent!important;
   background-color:transparent!important;
 }
+
+
+/* 2026-09-26: increase table column contrast */
+.vehicle-table-head{
+  background-color:#8f969f!important;
+  color:#111827!important;
+}
+.vehicle-row.vehicle-grid:nth-child(odd){
+  background-color:#c7cbd1!important;
+}
+.vehicle-row.vehicle-grid:nth-child(even){
+  background-color:#aeb4bc!important;
+}
+.vehicle-row.vehicle-grid{
+  border-bottom:1px solid rgba(255,255,255,.75)!important;
+}
