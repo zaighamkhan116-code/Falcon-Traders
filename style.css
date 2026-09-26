@@ -373,3 +373,35 @@ body.view-mode #editCount{
 }
 body.view-mode .delete-cycle{display:none!important}
 body:not(.view-mode) .delete-cycle{display:inline-flex!important}
+
+
+/* App-wide surface update: replace white UI backgrounds with light grey */
+:root{--falcon-surface-grey:#e5e7eb}
+
+/* Main content/cards, forms, dialogs and controls */
+.cycle-card,
+.vehicle-row,
+.modal,
+.modal-content,
+.sheet,
+.sheet-content,
+input,
+select,
+textarea,
+button:not(.mode-btn):not(.delete-cycle),
+.vehicle-table-head,
+.vehicle-table-row,
+.card,
+.panel{
+  background-color:var(--falcon-surface-grey)!important;
+}
+
+/* Preserve transparent/hero-image areas while removing remaining explicit white surfaces */
+body,
+main,
+#cycles,
+.app-content{
+  background-color:var(--falcon-surface-grey)!important;
+}
+
+.delete-cycle{background-color:var(--falcon-surface-grey)!important}
