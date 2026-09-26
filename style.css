@@ -1227,3 +1227,6 @@ body:not(.view-mode) .panel #form input.calculated-field[readonly]{background:#1
 body .hero-zone .dashboard-row #pendingCard{cursor:pointer!important}
 body .hero-zone .dashboard-row #pendingCard:hover{border-color:#f1c687!important;background:rgba(0,0,0,.42)!important}
 body .hero-zone .dashboard-row #pendingCard:focus-visible{outline:3px solid #f1c687!important;outline-offset:2px!important}
+
+/* Pending receivables use the same amber as the dashboard Payment Due amount. */
+body #pendingOverlay .profit-table td:last-child,body #pendingOverlay .profit-total strong{color:var(--mc-amber)!important}
