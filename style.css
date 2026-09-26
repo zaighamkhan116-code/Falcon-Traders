@@ -715,3 +715,14 @@ main{
 body.view-mode .upload-slips input[type="file"]{display:none!important}
 body.view-mode .upload-slips label{margin-bottom:2px!important}
 body:not(.view-mode) .upload-slips input[type="file"]{display:block!important}
+
+
+/* View mode: show only saved slip records; make previews openable */
+body.view-mode .upload-slips input[type="file"]{display:none!important}
+body.view-mode .upload-slips .compression-note,
+body.view-mode .upload-slips .no-upload-note{display:none!important}
+.uploaded-slip-link{display:inline-block!important;cursor:pointer!important;pointer-events:auto!important}
+.uploaded-slip-link img{pointer-events:auto!important;cursor:pointer!important}
+body.view-mode .upload-preview{pointer-events:auto!important}
+body.view-mode .upload-slips label{pointer-events:none!important}
+body.view-mode .upload-slips label:has(input[type="file"]){display:block!important}
