@@ -709,3 +709,9 @@ main{
 .upload-slips input[type="file"]{padding:10px!important;background:#d7d9dd!important}
 .upload-preview{margin:-1px 0 13px;font-size:11px;color:#667085}
 .upload-preview img{display:block;max-width:110px;max-height:90px;object-fit:cover;border-radius:7px;border:1px solid #fff;margin-bottom:3px}
+
+
+/* Upload controls are editable only in Edit mode */
+body.view-mode .upload-slips input[type="file"]{display:none!important}
+body.view-mode .upload-slips label{margin-bottom:2px!important}
+body:not(.view-mode) .upload-slips input[type="file"]{display:block!important}
