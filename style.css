@@ -943,3 +943,7 @@ body .view-details #form input.net-profit-auto:disabled{
   color:#6ee7a8!important;
   -webkit-text-fill-color:#6ee7a8!important;
 }
+
+/* Match the date control height to the remaining form inputs. */
+body .panel #form .date-field input[name="date"]{height:auto!important;min-height:0!important}
+body .panel #form .date-field #calendarDate{height:100%!important}
