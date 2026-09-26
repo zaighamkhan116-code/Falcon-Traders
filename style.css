@@ -1132,3 +1132,24 @@ body .panel #form .upload-preview .pending-upload-note{
   font-size:.75rem!important;
   overflow-wrap:anywhere!important;
 }
+
+
+/* Additional Cost: compact amount field and a wider details field. */
+body .panel #form .additional-cost-grid{
+  grid-template-columns:minmax(80px,.3fr) minmax(0,1fr)!important;
+  gap:12px!important;
+}
+body .panel #form .additional-cost-grid>label{min-width:0!important}
+body .panel #form .additional-cost-grid input{width:100%!important;min-width:0!important}
+
+/* Small upload actions sit just below the center of each numbered label. */
+body:not(.view-mode) .panel #form .upload-slips .slip-picker .choose-file{
+  width:74px!important;
+  min-width:74px!important;
+  min-height:27px!important;
+  padding:3px 4px!important;
+  border-radius:7px!important;
+  font-size:.64rem!important;
+  white-space:nowrap!important;
+  transform:translateY(5px)!important;
+}
