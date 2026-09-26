@@ -1230,3 +1230,7 @@ body .hero-zone .dashboard-row #pendingCard:focus-visible{outline:3px solid #f1c
 
 /* Pending receivables use the same amber as the dashboard Payment Due amount. */
 body #pendingOverlay .profit-table td:last-child,body #pendingOverlay .profit-total strong{color:var(--mc-amber)!important}
+
+/* Unfilled vehicle slots show a subtle Add action and neutral placeholders. */
+body .cycle .vehicle-list .vehicle-row.vehicle-grid .add-prompt{display:inline-block;color:#9baebb!important;font-size:.78em!important;font-weight:400!important;letter-spacing:.01em}
+body .cycle .vehicle-list .vehicle-row.vehicle-grid .empty-cell{color:#9baebb!important;font-weight:400!important}
