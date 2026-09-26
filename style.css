@@ -1241,5 +1241,5 @@ body .cycle .vehicle-table-head>span,body .cycle .vehicle-list .vehicle-row.vehi
 body .cycle .vehicle-list .vehicle-row.vehicle-grid:hover{background:rgba(0,0,0,.18)!important}
 
 
-/* Heading row: 60% transparent (40% black surface); data rows remain 90% transparent. */
-body .cycle .vehicle-table-head{background:rgba(0,0,0,.40)!important;background-color:rgba(0,0,0,.40)!important}
+/* Heading row: stronger 60% opacity so it is clearly distinct; data rows remain 90% transparent. */
+body .cycle .vehicle-table-head{background:rgba(0,0,0,.60)!important;background-color:rgba(0,0,0,.60)!important}
