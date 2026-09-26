@@ -605,3 +605,7 @@ main{
 .vehicle-list .vehicle-row.vehicle-grid{border-left:2px solid #fff!important;border-right:2px solid #fff!important;border-bottom:2px solid #fff!important;border-top:0!important}
 .vehicle-list .vehicle-row.vehicle-grid:first-child{border-top:0!important}
 .vehicle-list .vehicle-row.vehicle-grid>span+span{border-left:2px solid #fff!important}
+
+/* Table tone refinement: darker heading row, lighter body only */
+.vehicle-table-head{background:#8f949c!important}
+.vehicle-list .vehicle-row.vehicle-grid{background:#b5bac2!important}
