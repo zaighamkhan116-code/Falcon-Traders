@@ -644,3 +644,10 @@ main{
 /* Auto-calculated net profit */
 .net-profit-auto{color:#138a36!important;-webkit-text-fill-color:#138a36!important;font-weight:800!important}
 .view-details .net-profit-auto:disabled{color:#138a36!important;-webkit-text-fill-color:#138a36!important}
+
+
+/* Vehicle table text colors */
+.vehicle-date,.vehicle-number{color:#000!important}
+.delivery-status{color:#000!important}
+.delivery-status.en-route{color:#1677e8!important}
+.delivery-status.delivered{color:#000!important}
