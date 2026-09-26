@@ -565,3 +565,18 @@ main{
 }
 .vehicle-row.vehicle-grid{padding:0 7px!important}
 .vehicle-table-head{padding:0 7px!important}
+
+
+/* 2026-09-26 clearer column contrast + white vertical separators */
+.vehicle-row.vehicle-grid > span:nth-child(1),
+.vehicle-table-head > *:nth-child(1){background:#c4c8ce!important}
+.vehicle-row.vehicle-grid > span:nth-child(2),
+.vehicle-table-head > *:nth-child(2){background:#aeb3bb!important}
+.vehicle-row.vehicle-grid > span:nth-child(3),
+.vehicle-table-head > *:nth-child(3){background:#c4c8ce!important}
+.vehicle-row.vehicle-grid > span:nth-child(4),
+.vehicle-table-head > *:nth-child(4){background:#aeb3bb!important}
+.vehicle-row.vehicle-grid > span:not(:last-child),
+.vehicle-table-head > *:not(:last-child){
+  border-right:1px solid rgba(255,255,255,.95)!important;
+}
