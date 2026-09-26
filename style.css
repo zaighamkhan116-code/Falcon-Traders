@@ -540,3 +540,28 @@ main{
 .vehicle-row.vehicle-grid{
   border-bottom:1px solid rgba(255,255,255,.75)!important;
 }
+
+
+/* 2026-09-26 correction: COLUMN contrast, not alternating rows */
+.vehicle-row.vehicle-grid:nth-child(odd),
+.vehicle-row.vehicle-grid:nth-child(even){
+  background-color:#b9bdc3!important;
+}
+.vehicle-row.vehicle-grid > span:nth-child(1),
+.vehicle-table-head > *:nth-child(1){background:rgba(255,255,255,.16)!important}
+.vehicle-row.vehicle-grid > span:nth-child(2),
+.vehicle-table-head > *:nth-child(2){background:rgba(0,0,0,.07)!important}
+.vehicle-row.vehicle-grid > span:nth-child(3),
+.vehicle-table-head > *:nth-child(3){background:rgba(255,255,255,.16)!important}
+.vehicle-row.vehicle-grid > span:nth-child(4),
+.vehicle-table-head > *:nth-child(4){background:rgba(0,0,0,.07)!important}
+.vehicle-row.vehicle-grid > span,
+.vehicle-table-head > *{
+  align-self:stretch!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  padding:10px 3px!important;
+}
+.vehicle-row.vehicle-grid{padding:0 7px!important}
+.vehicle-table-head{padding:0 7px!important}
