@@ -726,3 +726,11 @@ body.view-mode .upload-slips .no-upload-note{display:none!important}
 body.view-mode .upload-preview{pointer-events:auto!important}
 body.view-mode .upload-slips label{pointer-events:none!important}
 body.view-mode .upload-slips label:has(input[type="file"]){display:block!important}
+
+
+/* In-app slip image viewer */
+.uploaded-slip-link{border:0!important;background:transparent!important;padding:0!important}
+.image-viewer{position:fixed;inset:0;z-index:10000;background:rgba(20,24,30,.94);display:flex;align-items:center;justify-content:center;padding:18px}
+.image-viewer.hidden{display:none!important}
+.image-viewer img{max-width:100%;max-height:92vh;object-fit:contain;border-radius:8px}
+#closeImageViewer{position:absolute;top:max(18px,env(safe-area-inset-top));right:18px;width:44px;height:44px;border:0;border-radius:50%;background:rgba(255,255,255,.9);font-size:30px;line-height:40px;color:#111;z-index:10001}
