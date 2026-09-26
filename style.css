@@ -1223,3 +1223,7 @@ body .profit-total strong{color:#22c55e;font-size:1.1rem}
 
 /* Calculated rent and sales retain the same dark field surface in editor mode. */
 body:not(.view-mode) .panel #form input.calculated-field[readonly]{background:#1b3242!important;background-color:#1b3242!important;border:1px solid #567689!important;color:#f5f8fc!important;-webkit-text-fill-color:#f5f8fc!important;opacity:1!important}
+
+body .hero-zone .dashboard-row #pendingCard{cursor:pointer!important}
+body .hero-zone .dashboard-row #pendingCard:hover{border-color:#f1c687!important;background:rgba(0,0,0,.42)!important}
+body .hero-zone .dashboard-row #pendingCard:focus-visible{outline:3px solid #f1c687!important;outline-offset:2px!important}
