@@ -1068,3 +1068,14 @@ body .view-details #form .upload-slips .view-slips-heading{display:inline!import
   body .panel #form .form-pair{gap:10px!important}
   body .panel #form .form-pair>label{font-size:.78rem!important;line-height:1.3!important}
 }
+
+
+/* Calculated Net Profit is read-only, but uses the normal editor field surface. */
+body:not(.view-mode) .panel #form input.net-profit-auto[readonly]{
+  background:#1b3242!important;
+  background-color:#1b3242!important;
+  border:1px solid #567689!important;
+  color:#22c55e!important;
+  -webkit-text-fill-color:#22c55e!important;
+  opacity:1!important;
+}
