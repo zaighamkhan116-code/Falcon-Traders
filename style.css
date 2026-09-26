@@ -737,3 +737,11 @@ body.view-mode .upload-slips label:has(input[type="file"]){display:block!importa
 
 /* Keep file selection exclusive to Edit mode, including inside #form. */
 body.view-mode #form .upload-slips input[type="file"]{display:none!important}
+
+/* Monthly summary */
+.monthly-summary-btn{display:block;width:100%;max-width:1200px;margin:12px auto 24px;padding:14px;border:0;border-radius:10px;background:#183c80;color:#fff;font-weight:700;cursor:pointer}
+.summary-overlay{position:fixed;inset:0;background:#0b193baa;z-index:40;display:grid;place-items:center;padding:14px}
+.summary-panel{background:#fff;color:#14213d;width:min(960px,100%);max-height:94vh;overflow:auto;border-radius:14px;padding:20px}
+.summary-top{display:flex;justify-content:space-between;align-items:center;gap:12px}.summary-top h2{margin:0}.summary-top button{border:0;background:transparent;font-size:30px;cursor:pointer}
+.summary-month-label{display:block;max-width:230px;margin:14px 0}.summary-status{padding:9px 12px;border-radius:8px;background:#fff2d6;color:#785000;font-weight:700}.summary-status.closed{background:#e3f6e8;color:#176b34}
+.summary-table-wrap{overflow-x:auto}.summary-table{width:100%;min-width:680px;border-collapse:collapse;font-size:13px}.summary-table th,.summary-table td{padding:10px;border:1px solid #d9e0e8;text-align:left}.summary-table th{background:#eaf1fb}.summary-panel h3{margin:18px 0 8px}.summary-panel ul{margin:0;padding-left:22px}.summary-total{display:flex;justify-content:space-between;gap:16px;margin-top:18px;padding:14px;background:#eaf1fb;border-radius:8px;font-size:17px}
