@@ -771,3 +771,9 @@ body.view-mode #form .upload-slips input[type="file"]{display:none!important}
 
 .data-notice{max-width:1200px;margin:12px auto;padding:14px 16px;border:1px solid #9bb5d4;border-radius:9px;background:#eaf1fb;color:#14213d;font-size:15px}
 .data-notice button{display:block;margin-top:10px;padding:10px 14px;border:1px solid #fff;border-radius:8px;background:#123a78!important;color:#fff;font-weight:700;cursor:pointer}
+
+/* Keep the amount and its explanation together as one form section. */
+#form .additional-cost-fields{min-width:0;margin:0;padding:0;border:0}
+#form .additional-cost-fields legend{padding:0;margin-bottom:9px;color:#43506a;font-size:1.2rem;font-weight:700}
+#form .additional-cost-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:12px;align-items:start}
+#form .additional-cost-grid label{min-width:0}
