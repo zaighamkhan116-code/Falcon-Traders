@@ -639,3 +639,8 @@ main{
 .vehicle-table-head > span{
   font-size:130%!important;
 }
+
+
+/* Auto-calculated net profit */
+.net-profit-auto{color:#138a36!important;-webkit-text-fill-color:#138a36!important;font-weight:800!important}
+.view-details .net-profit-auto:disabled{color:#138a36!important;-webkit-text-fill-color:#138a36!important}
