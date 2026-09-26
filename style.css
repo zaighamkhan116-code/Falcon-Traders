@@ -629,3 +629,13 @@ main{
   background:#c9cdd3!important;
   background-color:#c9cdd3!important;
 }
+
+
+/* Header typography: white and 130% */
+.vehicle-table-head,
+.vehicle-table-head > span{
+  color:#fff!important;
+}
+.vehicle-table-head > span{
+  font-size:130%!important;
+}
