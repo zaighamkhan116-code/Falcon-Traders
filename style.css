@@ -1153,3 +1153,14 @@ body:not(.view-mode) .panel #form .upload-slips .slip-picker .choose-file{
   white-space:nowrap!important;
   transform:translateY(5px)!important;
 }
+
+
+/* Show the actual compressed image size beside its preview in both modes. */
+body .panel #form .upload-preview .file-size-note{
+  display:inline-block!important;
+  margin-left:8px!important;
+  vertical-align:middle!important;
+  color:#b7cfdd!important;
+  font-size:.715rem!important;
+  white-space:nowrap!important;
+}
