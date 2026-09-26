@@ -671,11 +671,11 @@ main{
 
 /* Additional Information text color */
 #form textarea[name="additionalInformation"]{
-  color:#d6c6a5!important;
-  -webkit-text-fill-color:#d6c6a5!important;
+  color:#800000!important;
+  -webkit-text-fill-color:#800000!important;
 }
 .view-details #form textarea[name="additionalInformation"]:disabled{
-  color:#d6c6a5!important;
-  -webkit-text-fill-color:#d6c6a5!important;
+  color:#800000!important;
+  -webkit-text-fill-color:#800000!important;
   opacity:1!important;
 }
