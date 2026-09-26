@@ -787,3 +787,63 @@ body{display:flex;flex-direction:column;min-height:100svh}
 body>.hero-zone{flex:none}
 body>.records-main{display:flex;flex:1;flex-direction:column;width:100%;max-width:none;margin:0;padding:0 0 16px}
 #monthlySummaryBtn{line-height:1.25}
+
+/* Mission Control: dark surfaces and cyan highlights, retaining the truck hero image. */
+:root{--mc-bg:#08131d;--mc-card:#132433;--mc-card-raised:#1a3042;--mc-border:#35566a;--mc-text:#edf7ff;--mc-muted:#b2c8d7;--mc-cyan:#94e8f6;--mc-amber:#ffd29a;--mc-green:#a8efd4}
+html{background:var(--mc-bg);color-scheme:dark}
+body,body main,body #cycles,body .records-main,body .app-content{background:var(--mc-bg)!important;color:var(--mc-text)!important}
+body .records-main{padding:18px max(14px,4%) 20px!important;background:radial-gradient(circle at 90% 0%,#17394b 0,transparent 34%),var(--mc-bg)!important}
+/* Original truck photo stays behind the logo, with a deep blue tint. */
+body .hero-zone{background:url('/Truck.jpg') center/cover no-repeat!important;border-bottom:1px solid #31566f}
+body .hero-zone::before{background:linear-gradient(100deg,rgba(4,12,23,.88),rgba(4,16,29,.55) 58%,rgba(4,12,23,.74))!important}
+body .hero-zone header{background:transparent!important}
+body .hero-zone .brand h1{color:#f5faff!important;text-shadow:0 2px 16px #07111e}
+body .hero-zone .brand p{color:#cde9f6!important}
+body .hero-zone .mode-btn{background:#0d2437d9!important;border:1px solid var(--mc-cyan)!important;color:#e7faff!important;box-shadow:0 0 16px #4dc4ed44}
+body .hero-zone .summary.dashboard-row{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px!important;padding:0 12px 12px!important}
+body .hero-zone .dashboard-row>div,body .hero-zone .dashboard-row .vehicle-summary{height:76px!important;min-height:76px!important;padding:9px 6px!important;background:rgba(11,31,48,.88)!important;border:1px solid #5c91ac!important;border-radius:12px!important;box-shadow:0 6px 20px #0209127a!important;backdrop-filter:blur(7px)!important}
+body .hero-zone .dashboard-row>div:nth-child(3){grid-column:1/-1;grid-row:2;height:64px!important;min-height:64px!important;display:flex!important;flex-direction:row!important;justify-content:space-between!important;padding:11px 18px!important;background:rgba(19,36,51,.95)!important}
+body .hero-zone .dashboard-row>div:nth-child(4){grid-column:3;grid-row:1}
+body .hero-zone .dashboard-row>div:nth-child(3) span,body .hero-zone .dashboard-row>div:nth-child(3) strong{width:auto!important;margin:0!important;font-size:clamp(13px,3.7vw,20px)!important;color:var(--mc-amber)!important;white-space:normal!important}
+body .hero-zone .dashboard-row span{color:#c4deeb!important;white-space:normal!important;font-size:clamp(10px,2.5vw,14px)!important;line-height:1.1!important}
+body .hero-zone .dashboard-row strong,body .hero-zone .dashboard-row .count-box{color:var(--mc-cyan)!important;font-size:clamp(15px,4vw,22px)!important}
+body .hero-zone .dashboard-row .stepper button{background:#173950!important;color:var(--mc-cyan)!important;border:1px solid #5a90a6!important}
+body .hero-zone .dashboard-row #editCount{color:#b7eff9!important}
+/* Shifts and their column grid */
+body .cycle{background:var(--mc-card)!important;border:1px solid var(--mc-border)!important;border-radius:15px!important;box-shadow:0 12px 28px #020a1399!important;margin:0 auto 16px;max-width:1200px}
+body .cycle-head{background:linear-gradient(110deg,#19384c,#142838)!important;border-bottom:1px solid var(--mc-border)!important;padding:15px 17px!important}
+body .cycle-head h2,body .cycle-head span{color:var(--mc-text)!important}
+body .cycle-head small{color:var(--mc-cyan)!important}
+body .vehicle-table-head,body .vehicle-table-head>span{background:#244457!important;background-color:#244457!important;color:#d9f0fc!important;border-color:#58788b!important}
+body .vehicle-list .vehicle-row.vehicle-grid,body .vehicle-list .vehicle-row.vehicle-grid>span{background:#142b3a!important;background-color:#142b3a!important;border-color:#507086!important;color:var(--mc-text)!important}
+body .vehicle-list .vehicle-row.vehicle-grid:nth-child(even),body .vehicle-list .vehicle-row.vehicle-grid:nth-child(even)>span{background:#193344!important;background-color:#193344!important}
+body .vehicle-list .vehicle-row.vehicle-grid:hover,body .vehicle-list .vehicle-row.vehicle-grid:hover>span{background:#25475a!important;background-color:#25475a!important}
+body .vehicle-date,body .vehicle-number,body .delivery-status.delivered{color:var(--mc-text)!important}
+body .delivery-status.en-route{color:#9cddff!important}
+body .status.pending{color:var(--mc-amber)!important}body .status.received{color:var(--mc-green)!important}
+body .add-cycle{background:#17384b!important;border:1px solid #64a8c4!important;color:#d8f6ff!important;max-width:1200px;margin:0 auto}
+body .delete-cycle{background:#352532!important;color:#ffb4b9!important;border-color:#9c6170!important}
+body #monthlySummaryBtn{color:var(--mc-cyan)!important;background:transparent!important}
+/* Editor and summary surfaces */
+body .panel,body .password-card,body .summary-panel{background:#101f2d!important;color:var(--mc-text)!important;border:1px solid var(--mc-border)!important}
+body .overlay,body .password-overlay,body .summary-overlay{background:rgba(2,8,16,.82)!important}
+body .panel-head h2,body .password-card h2,body .summary-panel h2,body .summary-panel h3,body .upload-slips h3{color:var(--mc-text)!important}
+body .panel-head small,body .password-card p,body .upload-slips p,body .upload-preview,body .password-error:empty{color:var(--mc-muted)!important}
+body #form label,body #form .additional-cost-fields legend,body .summary-month-label{color:#d1e7f1!important}
+body input,body select,body textarea,body #form input,body #form select,body #form textarea,body .password-card input{background:#1b3242!important;border:1px solid #567689!important;color:var(--mc-text)!important;-webkit-text-fill-color:var(--mc-text)!important;box-shadow:none!important}
+body input::placeholder,body textarea::placeholder{color:#9cb7c7!important;-webkit-text-fill-color:#9cb7c7!important}
+body #form input:focus,body #form select:focus,body #form textarea:focus,body .password-card input:focus{background:#234456!important;border-color:var(--mc-cyan)!important;outline:2px solid #66cbeb55!important}
+body #form input:disabled,body #form select:disabled,body #form textarea:disabled{opacity:1!important;background:#172a38!important;color:#d5eaf2!important;-webkit-text-fill-color:#d5eaf2!important}
+body #form .net-profit-auto,body .view-details #form .net-profit-auto:disabled{color:var(--mc-green)!important;-webkit-text-fill-color:var(--mc-green)!important}
+body #form textarea[name="additionalInformation"],body .view-details #form textarea[name="additionalInformation"]:disabled{color:#f1b7d7!important;-webkit-text-fill-color:#f1b7d7!important}
+body .upload-slips input[type="file"]{background:#1b3242!important;color:var(--mc-text)!important}
+body .upload-preview a,body .uploaded-slip-link{color:var(--mc-cyan)!important}
+body .panel-head button,body .summary-top button{color:var(--mc-text)!important;background:transparent!important}
+body .password-actions #cancelPassword{background:#21394a!important;color:#e4f4fb!important;border:1px solid #6b91a5!important}
+body .password-actions #unlockEdit,body #form #saveBtn,body .summary-download{background:linear-gradient(105deg,#1477b5,#4ab6e3)!important;color:#fff!important;border:1px solid #9be8ff!important}
+body .summary-table th{background:#244457!important;color:#e5f7ff!important}body .summary-table td{background:#132b3a!important;color:var(--mc-text)!important}body .summary-table th,body .summary-table td{border-color:#507086!important}
+body .summary-total{background:#1b394a!important;color:var(--mc-text)!important}
+body .summary-status{background:#3e3121!important;color:#ffdaa7!important}body .summary-status.closed{background:#193e38!important;color:#b7f0d1!important}
+body .data-notice{background:#183448!important;color:#e3f3fd!important;border-color:#6294ae!important}
+body .data-notice button{background:#166a9d!important;color:#fff!important}
+@media(max-width:700px){body .hero-zone .dashboard-row>div,body .hero-zone .dashboard-row .vehicle-summary{height:72px!important;min-height:72px!important}body .hero-zone .dashboard-row>div:nth-child(3){height:62px!important;min-height:62px!important}body .hero-zone .summary.dashboard-row{gap:6px!important;padding:0 8px 8px!important}body .records-main{padding:15px 8px 20px!important}}
