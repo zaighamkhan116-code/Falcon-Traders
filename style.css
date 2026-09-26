@@ -739,7 +739,7 @@ body.view-mode .upload-slips label:has(input[type="file"]){display:block!importa
 body.view-mode #form .upload-slips input[type="file"]{display:none!important}
 
 /* Monthly summary */
-.monthly-summary-btn{display:block;width:100%;max-width:1200px;margin:12px auto 24px;padding:14px;border:0;border-radius:10px;background:#183c80;color:#fff;font-weight:700;cursor:pointer}
+.monthly-summary-btn{display:block;cursor:pointer}
 .summary-overlay{position:fixed;inset:0;background:#0b193baa;z-index:40;display:grid;place-items:center;padding:14px}
 .summary-panel{background:#fff;color:#14213d;width:min(960px,100%);max-height:94vh;overflow:auto;border-radius:14px;padding:20px}
 .summary-top{display:flex;justify-content:space-between;align-items:center;gap:12px}.summary-top h2{margin:0}.summary-top button{border:0;background:transparent;font-size:30px;cursor:pointer}
@@ -779,11 +779,11 @@ body.view-mode #form .upload-slips input[type="file"]{display:none!important}
 #form .additional-cost-grid label{min-width:0}
 
 /* Monthly summary is a distinct action button on the grey dashboard. */
-#monthlySummaryBtn{width:calc(100% - 26px);max-width:1174px;min-height:54px;margin:18px auto 28px;padding:14px 18px;background:#123a78!important;color:#fff!important;border:2px solid #fff!important;border-radius:10px;font-size:16px;font-weight:800;box-shadow:0 2px 8px rgba(18,58,120,.24);cursor:pointer}
+#monthlySummaryBtn{width:max-content;max-width:calc(100% - 20px);min-height:44px;margin:auto auto 16px;padding:8px 4px;background:transparent!important;color:#4b5563!important;border:0!important;border-radius:0;box-shadow:none!important;font-size:16px;font-weight:400;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
 #monthlySummaryBtn:focus-visible{outline:3px solid #72adff;outline-offset:3px}
 
 /* Keep the compact summary action centered at the bottom of the page. */
 body{display:flex;flex-direction:column;min-height:100svh}
 body>.hero-zone{flex:none}
 body>.records-main{display:flex;flex:1;flex-direction:column;width:100%;max-width:none;margin:0;padding:0 0 16px}
-#monthlySummaryBtn{width:calc((100% - 26px)/4);max-width:294px;min-height:54px;margin:auto auto 16px;padding:8px 4px;line-height:1.15}
+#monthlySummaryBtn{line-height:1.25}
