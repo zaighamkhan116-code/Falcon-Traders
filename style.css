@@ -593,3 +593,8 @@ main{
 .vehicle-table-head{margin-bottom:0!important}
 .vehicle-table-head + .vehicle-row.vehicle-grid{margin-top:0!important}
 .vehicle-row.vehicle-grid{margin-top:0!important}
+
+/* True continuous table: vehicle-list wrapper was causing the white separator and width mismatch */
+.vehicle-list{margin:0 12px 0!important;padding:0!important;background:transparent!important;border:0!important;display:block!important;width:auto!important}
+.vehicle-list .vehicle-row.vehicle-grid{margin:0!important;width:100%!important;border-left:2px solid #000!important;border-right:2px solid #000!important;border-bottom:2px solid #000!important;border-top:0!important;border-radius:0!important}
+.vehicle-table-head{margin:0 12px!important;width:auto!important}
