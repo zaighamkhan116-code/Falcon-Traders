@@ -450,3 +450,40 @@ textarea,
 .cycle-card{background-color:#c5c8cd!important}
 .vehicle-table-head{background-color:#aeb3ba!important}
 .vehicle-row,.vehicle-table-row{background-color:#b9bdc3!important}
+
+
+/* Position the four dashboard summary blocks over the bottom of the hero image */
+.hero,
+.header,
+.hero-section,
+header{
+  position:relative;
+}
+
+.stats,
+.stats-grid,
+.summary-grid,
+.dashboard-stats{
+  position:relative!important;
+  z-index:5!important;
+  margin-top:-100px!important;
+  padding:0 13px 10px!important;
+  background:transparent!important;
+}
+
+/* Ensure the content begins cleanly below the overlaid stats */
+#cycles,
+.app-content,
+main{
+  position:relative;
+  z-index:1;
+}
+
+@media(max-width:700px){
+  .stats,
+  .stats-grid,
+  .summary-grid,
+  .dashboard-stats{
+    margin-top:-100px!important;
+  }
+}
