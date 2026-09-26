@@ -598,3 +598,10 @@ main{
 .vehicle-list{margin:0 12px 0!important;padding:0!important;background:transparent!important;border:0!important;display:block!important;width:auto!important}
 .vehicle-list .vehicle-row.vehicle-grid{margin:0!important;width:100%!important;border-left:2px solid #000!important;border-right:2px solid #000!important;border-bottom:2px solid #000!important;border-top:0!important;border-radius:0!important}
 .vehicle-table-head{margin:0 12px!important;width:auto!important}
+
+/* White continuous grid, including header/body divider */
+.vehicle-table-head{border:2px solid #fff!important;border-bottom:2px solid #fff!important}
+.vehicle-table-head>span+span{border-left:2px solid #fff!important}
+.vehicle-list .vehicle-row.vehicle-grid{border-left:2px solid #fff!important;border-right:2px solid #fff!important;border-bottom:2px solid #fff!important;border-top:0!important}
+.vehicle-list .vehicle-row.vehicle-grid:first-child{border-top:0!important}
+.vehicle-list .vehicle-row.vehicle-grid>span+span{border-left:2px solid #fff!important}
