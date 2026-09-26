@@ -853,3 +853,12 @@ body .vehicle-table-head>span:nth-child(n){background:#244457!important;backgrou
 body .vehicle-list .vehicle-row.vehicle-grid>span.delivery-status.en-route{color:#9cddff!important}
 body .vehicle-list .vehicle-row.vehicle-grid>span.status.pending{color:var(--mc-amber)!important}
 body .vehicle-list .vehicle-row.vehicle-grid>span.status.received{color:var(--mc-green)!important}
+
+/* Dashboard metric cards: black with 70% transparency over the truck photo. */
+body .hero-zone .dashboard-row>div:nth-child(n),
+body .hero-zone .dashboard-row .vehicle-summary{
+  background:rgba(0,0,0,.30)!important;
+  background-color:rgba(0,0,0,.30)!important;
+  backdrop-filter:none!important;
+  -webkit-backdrop-filter:none!important;
+}
