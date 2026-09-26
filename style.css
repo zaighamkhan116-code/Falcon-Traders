@@ -615,3 +615,17 @@ main{
 .vehicle-table-head > *{background-color:#747b85!important}
 .vehicle-list .vehicle-row.vehicle-grid,
 .vehicle-list .vehicle-row.vehicle-grid > span{background-color:#b8bdc5!important}
+
+
+/* 2026-09-26 exact requested table tones: dark heading, uniform light-grey body */
+.vehicle-table-head,
+.vehicle-table-head > span{
+  background:#5f6670!important;
+  background-color:#5f6670!important;
+  color:#111827!important;
+}
+.vehicle-list .vehicle-row.vehicle-grid,
+.vehicle-list .vehicle-row.vehicle-grid > span{
+  background:#c9cdd3!important;
+  background-color:#c9cdd3!important;
+}
