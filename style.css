@@ -1037,3 +1037,15 @@ body .cycle .vehicle-list .vehicle-row.vehicle-grid:focus-visible{outline:2px so
   body .cycle .vehicle-list .vehicle-row.vehicle-grid>span{padding:9px 3px!important}
   body .cycle .vehicle-list .vehicle-row.vehicle-grid .vehicle-number b{font-size:12px!important}
 }
+
+
+/* Stronger status and profit colours. */
+body .cycle .vehicle-list .vehicle-row.vehicle-grid .delivery-status.en-route{color:#3b82f6!important}
+body .cycle .vehicle-list .vehicle-row.vehicle-grid .status.received{color:#22c55e!important}
+body .hero-zone .dashboard-row #profit{color:#22c55e!important}
+body .panel #form label:has(.net-profit-auto){color:#22c55e!important}
+body .panel #form input.net-profit-auto,
+body .view-details #form input.net-profit-auto:disabled{
+  color:#22c55e!important;
+  -webkit-text-fill-color:#22c55e!important;
+}
