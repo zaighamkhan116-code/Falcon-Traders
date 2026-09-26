@@ -508,3 +508,19 @@ main{
 .metric-card{
   background:rgba(15,23,42,.36)!important;
 }
+
+
+/* 2026-09-26: remove shared grey backing behind the four hero dashboard cards.
+   The actual wrapper is .hero-zone main, not the generic stats aliases. */
+.hero-zone > main{
+  background:transparent!important;
+  background-color:transparent!important;
+}
+.hero-zone > main::before,
+.hero-zone > main::after{
+  background:transparent!important;
+}
+.hero-zone .summary.dashboard-row{
+  background:transparent!important;
+  background-color:transparent!important;
+}
