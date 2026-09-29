@@ -1251,3 +1251,14 @@ body .cycle .vehicle-table-head>span{background:transparent!important;background
 /* Blue heading fill at 80% transparency. */
 body .cycle .vehicle-table-head{background:rgba(30,110,190,.20)!important;background-color:rgba(30,110,190,.20)!important}
 body .cycle .vehicle-table-head>span{background:transparent!important;background-color:transparent!important}
+
+/* Month browsing in the dashboard header. */
+body .brand .mode-controls{margin-left:auto;display:flex;flex-direction:column;align-items:flex-end;gap:8px;flex:none}
+body .brand .mode-controls .mode-btn{margin-left:0}
+body .month-nav{display:flex;align-items:center;justify-content:flex-end;gap:7px}
+body .month-nav button{width:28px;height:28px;padding:0;border:1px solid #87ceeb;border-radius:7px;background:rgba(0,0,0,.65);color:#f6fbff;font-size:22px;line-height:1;cursor:pointer}
+body .month-nav button:focus-visible{outline:2px solid #87ceeb;outline-offset:2px}
+body .month-nav span{min-width:68px;text-align:center;color:#fff;font-size:14px;font-weight:650;white-space:nowrap}
+body .month-nav.completed span{color:#9aa6b1}
+body #addCycle[hidden]{display:none!important}
+@media(max-width:700px){body .brand .mode-controls{gap:6px}body .month-nav{gap:4px}body .month-nav button{width:25px;height:25px;font-size:20px}body .month-nav span{font-size:12px;min-width:58px}}
