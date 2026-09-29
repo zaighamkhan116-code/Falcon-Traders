@@ -58,6 +58,32 @@ async function body(req) {
     req.on('error', reject);
   });
 }
+function monthOf(value) {
+  const text = String(value || '');
+  let match = text.match(/^(\d{4})-(\d{2})-\d{2}/);
+  if (match) return match[1] + '-' + match[2];
+  match = text.match(/^\d{1,2}\/(\d{1,2})\/(\d{4})$/);
+  if (match) return match[2] + '-' + match[1].padStart(2, '0');
+  return '';
+}
+function currentMonth() {
+  const parts = new Intl.DateTimeFormat('en-US', {timeZone: 'Asia/Karachi', year: 'numeric', month: '2-digit'}).formatToParts(new Date());
+  return parts.find(p => p.type === 'year').value + '-' + parts.find(p => p.type === 'month').value;
+}
+function newOrdersAllowed(previous, next) {
+  const now = currentMonth();
+  const prior = new Map(previous.cycles.map(c => [c.id, c]));
+  return next.cycles.every(c => {
+    const old = prior.get(c.id), createdMonth = monthOf(c.created);
+    if (!old && createdMonth !== now) return false;
+    const oldRows = new Map((old?.rows || []).map(r => [r.id, r]));
+    return Array.isArray(c.rows) && c.rows.every(r => {
+      const before = oldRows.get(r.id);
+      if (!r.vehicle || before?.vehicle) return true;
+      return createdMonth === now && monthOf(r.date) === now;
+    });
+  });
+}
 async function handler(req, res) {
   const pathname = new URL(req.url, 'http://localhost').pathname;
   if (pathname === '/health') return json(res, 200, {ok: true});
@@ -92,6 +118,9 @@ async function handler(req, res) {
     if (!sameOrigin(req) || !authenticated(req)) return json(res, 403, {error: 'Editor login required'});
     const input = await body(req);
     if (!Number.isSafeInteger(input.version) || input.version < 0 || !input.state || !Array.isArray(input.state.cycles) || !Number.isInteger(input.state.nextCount)) return json(res, 400, {error: 'Invalid state'});
+    const previous = await db.query('SELECT version, data FROM app_state WHERE id = 1');
+    if (previous.rows[0].version !== input.version) return json(res, 409, {error: 'Records changed on another device. Reload to see the latest version.'});
+    if (!newOrdersAllowed(previous.rows[0].data, input.state)) return json(res, 400, {error: 'New orders can only be added to the current month.'});
     const {rows} = await db.query('UPDATE app_state SET data = $1::jsonb, version = version + 1 WHERE id = 1 AND version = $2 RETURNING version', [JSON.stringify(input.state), input.version]);
     if (!rows.length) return json(res, 409, {error: 'Records changed on another device. Reload to see the latest version.'});
     return json(res, 200, {version: rows[0].version});
