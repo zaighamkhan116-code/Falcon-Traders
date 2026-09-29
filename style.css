@@ -1262,3 +1262,6 @@ body .month-nav span{min-width:68px;text-align:center;color:#fff;font-size:14px;
 body .month-nav.completed span{color:#9aa6b1}
 body #addCycle[hidden]{display:none!important}
 @media(max-width:700px){body .brand .mode-controls{gap:6px}body .month-nav{gap:4px}body .month-nav button{width:25px;height:25px;font-size:20px}body .month-nav span{font-size:12px;min-width:58px}}
+
+/* Match month arrows to the View/Editor Mode button. */
+body .hero-zone .month-nav button{background:#0d2437d9!important;background-color:#0d2437d9!important;border:1px solid var(--mc-cyan)!important;color:#e7faff!important;box-shadow:0 0 16px #4dc4ed44!important}
