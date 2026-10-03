@@ -7,8 +7,7 @@
 <section class="form-stage booking-stage" aria-labelledby="bookingStageTitle">
 <h3 id="bookingStageTitle">To be filled at the time of booking</h3>
 <label>Date<span class="date-field"><input name="date" type="text" placeholder="25 Sep 26" readonly required aria-label="Selected date"><input id="calendarDate" type="date" aria-label="Choose date from calendar"></span></label>
-<label>Coal Loaded (tons)<input name="purchaseWeight" type="number" step="0.01" min="0"></label>
-<label>Vehicle No.<input name="vehicle" required placeholder="Vehicle number"></label>
+<div class="form-pair"><label>Vehicle No.<input name="vehicle" required placeholder="Vehicle number"></label><label>Coal Loaded (tons)<input name="purchaseWeight" type="number" step="0.01" min="0"></label></div>
 <div class="form-pair"><label>Purchase Rate (Rs/ton)<input name="purchaseRate" type="number" step="0.01" min="0"></label><label>Sale Rate (Rs/ton)<input name="saleRate" type="number" step="0.01" min="0"></label></div>
 <div class="form-pair"><label>Vehicle Rent (Rs/ton)<input name="vehicleRentRate" type="number" step="0.01" min="0"></label><label>Total Vehicle Rent (Rs)<input name="vehicleRentTotal" class="calculated-field" type="number" step="0.01" readonly></label></div>
 <label class="booking-status">Vehicle Status<select name="status"><option>En Route</option><option>Delivered</option></select></label>
