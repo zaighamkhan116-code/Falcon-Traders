@@ -1282,9 +1282,13 @@ body .panel #form .form-stage{
   border-radius:14px!important;
   box-shadow:0 10px 24px rgba(0,0,0,.16)!important;
 }
-body .panel #form .booking-stage{background:#142d3d!important;background-color:#142d3d!important;border-color:#5f91ac!important}
-body .panel #form .delays-stage{background:#282635!important;background-color:#282635!important;border-color:#77698f!important}
-body .panel #form .receiving-stage{background:#153139!important;background-color:#153139!important;border-color:#518f98!important}
+body .panel #form .booking-stage,
+body .panel #form .delays-stage,
+body .panel #form .receiving-stage{
+  background:#202632!important;
+  background-color:#202632!important;
+  border-color:#414d65!important;
+}
 body .panel #form .form-stage>h3{
   margin:0 0 3px!important;
   font-size:.72rem!important;
@@ -1293,14 +1297,39 @@ body .panel #form .form-stage>h3{
   letter-spacing:.015em;
   color:#abbecb!important;
 }
-body .panel #form .delays-stage>h3{color:#c7b9d9!important}
-body .panel #form .receiving-stage>h3{color:#a5d2cf!important}
+body .panel #form .form-stage>h3{color:#dce4ff!important}
 body .panel #form .form-stage>label,
 body .panel #form .form-stage>.form-pair,
 body .panel #form .form-stage>fieldset,
 body .panel #form .form-stage>.upload-slips{min-width:0;width:100%}
 body .panel #form .booking-status select{display:block;width:100%!important;text-align:center!important;text-align-last:center!important}
-body .panel #form .receiving-stage>.upload-slips{border-top:1px solid #518f9880;padding-top:15px!important;margin-top:3px}
+body .panel #form .receiving-stage>.upload-slips{border-top:1px solid #414d65;padding-top:15px!important;margin-top:3px}
+body .panel #form .form-stage label,
+body .panel #form .form-stage .additional-cost-fields legend,
+body .panel #form .form-stage .upload-slips h3{color:#b8c9ff!important}
+body .panel #form .form-stage input:not([type="file"]),
+body .panel #form .form-stage select,
+body .panel #form .form-stage textarea,
+body:not(.view-mode) .panel #form .form-stage input.calculated-field[readonly],
+body:not(.view-mode) .panel #form .form-stage input.net-profit-auto[readonly],
+body .view-details #form .form-stage input:disabled,
+body .view-details #form .form-stage select:disabled,
+body .view-details #form .form-stage textarea:disabled{
+  background:#171c27!important;
+  background-color:#171c27!important;
+  border-color:#596782!important;
+}
+body .panel #form .form-stage textarea[name="additionalInformation"],
+body .view-details #form .form-stage textarea[name="additionalInformation"]:disabled{
+  color:#f5f6fb!important;
+  -webkit-text-fill-color:#f5f6fb!important;
+}
+body .panel #form .form-stage label:has(.net-profit-auto){color:#52d6a2!important}
+body .panel #form .form-stage input.net-profit-auto,
+body .view-details #form .form-stage input.net-profit-auto:disabled{
+  color:#52d6a2!important;
+  -webkit-text-fill-color:#52d6a2!important;
+}
 @media(max-width:700px){
   body .panel #form .form-stage{padding:16px 13px 18px!important;gap:13px!important}
 }
