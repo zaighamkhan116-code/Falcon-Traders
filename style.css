@@ -1333,3 +1333,32 @@ body .view-details #form .form-stage input.net-profit-auto:disabled{
 @media(max-width:700px){
   body .panel #form .form-stage{padding:16px 13px 18px!important;gap:13px!important}
 }
+
+/* View Mode uses a read-only sectioned slip; Editor Mode retains the entry form. */
+body .view-details #form{display:none!important}
+body .view-details .panel-head>div{display:none!important}
+body .view-details .panel-head{justify-content:flex-end!important;margin-bottom:10px}
+body #viewSlip[hidden]{display:none!important}
+body #viewSlip .view-slip{width:100%;color:#f5f6fb;font-size:.85rem}
+body #viewSlip .view-slip-header,
+body #viewSlip .view-slip-card{background:#202632;border:1px solid #414d65;border-radius:14px;padding:18px 17px;margin-bottom:12px}
+body #viewSlip .view-slip-header h2{margin:0;color:#f5f6fb!important;font-size:1.25rem!important;font-weight:600!important}
+body #viewSlip .view-slip-header p{margin:5px 0 18px;color:#aab1bf;font-size:.76rem}
+body #viewSlip .view-slip-identity{display:flex;justify-content:space-between;align-items:center;gap:12px}
+body #viewSlip .view-slip-identity strong{font-size:1.35rem;font-weight:600!important;color:#fff;overflow-wrap:anywhere}
+body #viewSlip .view-slip-identity span{color:#dce4ff;font-size:.8rem;white-space:nowrap}
+body #viewSlip .view-slip-status{display:inline-block;padding:5px 10px;margin-top:13px;border-radius:6px;background:#2a3556;color:#b8c9ff;font-size:.76rem}
+body #viewSlip .view-slip-card h3{margin:0 0 12px;color:#b8c9ff;font-size:.82rem!important;font-weight:600!important}
+body #viewSlip dl{margin:0}
+body #viewSlip .view-slip-line{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:15px;padding:7px 0;align-items:start}
+body #viewSlip dt{color:#aeb8cc;font-size:.8rem;overflow-wrap:anywhere}
+body #viewSlip dd{margin:0;text-align:right;color:#f5f6fb;font-size:.82rem;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+body #viewSlip .view-slip-note{margin:0 0 9px;color:#ced5e3;font-size:.82rem;white-space:pre-wrap;overflow-wrap:anywhere}
+body #viewSlip .view-slip-profit{display:flex;justify-content:space-between;gap:12px;border-top:1px solid #596782;padding-top:15px;margin-top:13px;font-size:.98rem}
+body #viewSlip .view-slip-profit strong{color:#52d6a2;font-weight:600!important;font-variant-numeric:tabular-nums}
+body #viewSlip .view-slip-attachments{margin-top:16px}
+body #viewSlip .view-slip-attachment{display:flex;gap:9px;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:8px 0;font-size:.8rem}
+body #viewSlip .view-slip-attachment small{color:#aab1bf;font-size:.72rem}
+body #viewSlip .uploaded-slip-link{display:flex;align-items:center;gap:7px;padding:3px;background:transparent!important;border:0!important;color:#b8c9ff!important;font-size:.8rem;text-decoration:underline;cursor:pointer}
+body #viewSlip .uploaded-slip-link img{width:45px;height:34px;object-fit:cover;border-radius:4px}
+@media(max-width:700px){body #viewSlip .view-slip-card,body #viewSlip .view-slip-header{padding:16px 13px}body #viewSlip .view-slip-line{gap:12px}}
