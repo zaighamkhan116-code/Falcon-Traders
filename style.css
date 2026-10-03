@@ -1366,3 +1366,15 @@ body #viewSlip .uploaded-slip-link img{width:45px;height:34px;object-fit:cover;b
 /* Center the booking title and darken the area around the View Mode slip. */
 body #viewSlip .view-slip-booking-title{text-align:center!important}
 body #overlay.view-details .panel{background:#10131a!important;background-color:#10131a!important}
+
+/* Raised graphite slip cards with brighter beveled edges. */
+body #viewSlip .view-slip-header,
+body #viewSlip .view-slip-card{
+  background:linear-gradient(145deg,#2a3444 0%,#202632 65%,#1b2230 100%)!important;
+  border:1px solid #718ab1!important;
+  border-top-color:#9aafd0!important;
+  border-bottom-color:#465b7b!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.12),inset 0 -1px 0 rgba(0,0,0,.28),0 3px 0 #080d16,0 12px 24px rgba(0,0,0,.38)!important;
+  margin-bottom:16px;
+}
+body #viewSlip .view-slip-header{background:linear-gradient(145deg,#253043 0%,#1a2231 70%,#151c28 100%)!important}
