@@ -1270,3 +1270,37 @@ body .hero-zone .month-nav button{background:#0d2437d9!important;background-colo
 body .hero-zone main{padding-top:30px!important}
 body .hero-zone main>.month-nav{justify-content:flex-start;margin:0 0 8px 8px;width:max-content}
 @media(max-width:700px){body .hero-zone main{padding-top:30px!important}}
+
+/* Vehicle details follow the booking, delay and receiving workflow in both modes. */
+body .panel #form .form-stage{
+  display:grid!important;
+  gap:14px!important;
+  min-width:0;
+  margin:0;
+  padding:18px 16px 20px!important;
+  border:1px solid #48738a!important;
+  border-radius:14px!important;
+  box-shadow:0 10px 24px rgba(0,0,0,.16)!important;
+}
+body .panel #form .booking-stage{background:#142d3d!important;background-color:#142d3d!important;border-color:#5f91ac!important}
+body .panel #form .delays-stage{background:#282635!important;background-color:#282635!important;border-color:#77698f!important}
+body .panel #form .receiving-stage{background:#153139!important;background-color:#153139!important;border-color:#518f98!important}
+body .panel #form .form-stage>h3{
+  margin:0 0 3px!important;
+  font-size:.72rem!important;
+  font-weight:600!important;
+  line-height:1.35!important;
+  letter-spacing:.015em;
+  color:#abbecb!important;
+}
+body .panel #form .delays-stage>h3{color:#c7b9d9!important}
+body .panel #form .receiving-stage>h3{color:#a5d2cf!important}
+body .panel #form .form-stage>label,
+body .panel #form .form-stage>.form-pair,
+body .panel #form .form-stage>fieldset,
+body .panel #form .form-stage>.upload-slips{min-width:0;width:100%}
+body .panel #form .booking-status select{display:block;width:100%!important;text-align:center!important;text-align-last:center!important}
+body .panel #form .receiving-stage>.upload-slips{border-top:1px solid #518f9880;padding-top:15px!important;margin-top:3px}
+@media(max-width:700px){
+  body .panel #form .form-stage{padding:16px 13px 18px!important;gap:13px!important}
+}
