@@ -1362,3 +1362,7 @@ body #viewSlip .view-slip-attachment small{color:#aab1bf;font-size:.72rem}
 body #viewSlip .uploaded-slip-link{display:flex;align-items:center;gap:7px;padding:3px;background:transparent!important;border:0!important;color:#b8c9ff!important;font-size:.8rem;text-decoration:underline;cursor:pointer}
 body #viewSlip .uploaded-slip-link img{width:45px;height:34px;object-fit:cover;border-radius:4px}
 @media(max-width:700px){body #viewSlip .view-slip-card,body #viewSlip .view-slip-header{padding:16px 13px}body #viewSlip .view-slip-line{gap:12px}}
+
+/* Center the booking title and darken the area around the View Mode slip. */
+body #viewSlip .view-slip-booking-title{text-align:center!important}
+body #overlay.view-details .panel{background:#10131a!important;background-color:#10131a!important}
