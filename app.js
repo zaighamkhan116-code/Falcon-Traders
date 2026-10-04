@@ -50,7 +50,7 @@ function viewSlipMarkup(r,shiftLabel){
   const amount=(label,value)=>hasAmount(value)?row(label,money(value)):'';
   const pair=(label,value)=>filled(value)?row(label,value):'';
   const notes=String(r.additionalInformation||'').trim();
-  const hasRent=r.rentReceived==='Yes'||hasAmount(r.rentReceivedAmount);
+  const hasRent=['Yes','Full amount','Partial amount'].includes(r.rentReceived)||hasAmount(r.rentReceivedAmount);
   const hasNotes=!!notes||hasRent;
   const hasReceiving=filled(r.received)||Number(r.paymentAmount||0)!==0||Number(r.totalSoldAmount||0)!==0||hasAmount(r.commissionPaid)||r.payment==='Received';
   const slips=[['orderSlip','1. Order slip'],['receiving','2. Receiving'],['otherRecord','3. Any other record']].filter(([key])=>filled(r[key]));
@@ -62,7 +62,7 @@ function viewSlipMarkup(r,shiftLabel){
 }
 function renderViewSlip(r,shiftLabel){let slip=$('#viewSlip');if(!slip){slip=document.createElement('div');slip.id='viewSlip';form.before(slip)}slip.innerHTML=editMode?'':viewSlipMarkup(r,shiftLabel);slip.hidden=editMode}
 
-function openRow(cid,rid){const c=state.cycles.find(x=>x.id===cid),r=c?.rows.find(x=>x.id===rid);if(!r||(!r.vehicle&&shiftMonth(c)!==monthKey(todayIso())))return;editing={cid,rid};form.reset();Object.keys(r).forEach(k=>{if(form.elements[k])form.elements[k].value=k==='date'?(r[k]?formatDate(r[k]):''):r[k]});$('#calendarDate').value=toIsoDate(r.date)||'';calculateNetProfit();renderUploadPreviews(r);$('#cycleLabel').textContent='Shift '+(monthCycles().indexOf(c)+1);renderViewSlip(r,$('#cycleLabel').textContent);$('#formTitle').textContent=editMode?(r.vehicle?'Edit '+r.vehicle:'Vehicle Entry'):(r.vehicle||'Vehicle Details');Array.from(form.elements).forEach(el=>{if(el.id!=='saveBtn'&&!el.classList.contains('uploaded-slip-link'))el.disabled=!editMode});$('#saveBtn').classList.toggle('hidden',!editMode);overlay.classList.toggle('view-details',!editMode);overlay.classList.remove('hidden')}
+function openRow(cid,rid){const c=state.cycles.find(x=>x.id===cid),r=c?.rows.find(x=>x.id===rid);if(!r||(!r.vehicle&&shiftMonth(c)!==monthKey(todayIso())))return;editing={cid,rid};form.reset();Object.keys(r).forEach(k=>{if(form.elements[k])form.elements[k].value=k==='date'?(r[k]?formatDate(r[k]):''):k==='rentReceived'&&r[k]==='Yes'?'Full amount':r[k]});$('#calendarDate').value=toIsoDate(r.date)||'';calculateNetProfit();renderUploadPreviews(r);$('#cycleLabel').textContent='Shift '+(monthCycles().indexOf(c)+1);renderViewSlip(r,$('#cycleLabel').textContent);$('#formTitle').textContent=editMode?(r.vehicle?'Edit '+r.vehicle:'Vehicle Entry'):(r.vehicle||'Vehicle Details');Array.from(form.elements).forEach(el=>{if(el.id!=='saveBtn'&&!el.classList.contains('uploaded-slip-link'))el.disabled=!editMode});$('#saveBtn').classList.toggle('hidden',!editMode);overlay.classList.toggle('view-details',!editMode);overlay.classList.remove('hidden')}
 $('#calendarDate').addEventListener('change',e=>{form.elements.date.value=e.target.value?formatDate(e.target.value):''});
 $('#calendarDate').addEventListener('click',e=>{if(editMode&&typeof e.target.showPicker==='function'){try{e.target.showPicker()}catch(_){/* Native date control handles the tap. */}}});
 $('#modeBtn').onclick=async()=>{if(editMode){try{await request('/api/logout',{method:'POST'});editMode=false;applyMode()}catch(err){alert(err.message)}return}$('#modePassword').value='';$('#passwordError').textContent='';$('#passwordOverlay').classList.remove('hidden');setTimeout(()=>$('#modePassword').focus(),0)};
