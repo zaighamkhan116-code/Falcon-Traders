@@ -1378,3 +1378,5 @@ body #viewSlip .view-slip-card{
   margin-bottom:16px;
 }
 body #viewSlip .view-slip-header{background:linear-gradient(145deg,#253043 0%,#1a2231 70%,#151c28 100%)!important}
+
+body #form .payment-due-field,body #form .payment-due-field input{color:#ffd166!important}
