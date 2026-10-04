@@ -16,7 +16,6 @@
 <h3 id="delaysStageTitle">Fill in case if veh rent is received</h3>
 <div class="form-pair"><label>Rent received<select name="rentReceived"><option value="No">No</option><option value="Yes">Yes</option></select></label><label>Amount Received (Rs)<input name="rentReceivedAmount" type="number" step="0.01" min="0" inputmode="decimal"></label></div>
 <label>Additional Information<textarea name="additionalInformation" rows="3" placeholder=""></textarea></label>
-<fieldset class="additional-cost-fields"><legend>Additional Cost (if any)</legend><div class="additional-cost-grid"><label>Amount<input name="additionalCost" type="number" step="0.01" min="0" value="0"></label><label>Details<input name="additionalCostDetails" type="text" placeholder=""></label></div></fieldset>
 </section>
 <section class="form-stage receiving-stage" aria-labelledby="receivingStageTitle">
 <h3 id="receivingStageTitle">To be filled when veh has been received</h3>
@@ -26,4 +25,4 @@
 <label>Payment Due<select name="payment"><option>Pending</option><option>Received</option></select></label>
 <section class="upload-slips"><h3><span class="edit-slips-heading">Upload slips</span><span class="view-slips-heading">Slips Attached</span></h3><p>Upload files below</p><label class="slip-picker"><span>1: Order slip</span><span class="choose-file">Upload file</span><input type="file" name="orderSlipFile" accept="image/*"></label><div class="upload-preview" data-preview="orderSlip"></div><label class="slip-picker"><span>2: Receiving</span><span class="choose-file">Upload file</span><input type="file" name="receivingFile" accept="image/*"></label><div class="upload-preview" data-preview="receiving"></div><label class="slip-picker"><span>3: Any other Record</span><span class="choose-file">Upload file</span><input type="file" name="otherRecordFile" accept="image/*"></label><div class="upload-preview" data-preview="otherRecord"></div></section>
 </section>
-<button id="saveBtn" class="save" type="submit">Save</button></form></div></div><script src="/app.js?v=20261005-1"></script><div id="imageViewer" class="image-viewer hidden"><button id="closeImageViewer" type="button" aria-label="Close image">×</button><img id="fullSlipImage" alt="Uploaded slip"></div></body></html>
+<button id="saveBtn" class="save" type="submit">Save</button></form></div></div><script src="/app.js?v=20261005-2"></script><div id="imageViewer" class="image-viewer hidden"><button id="closeImageViewer" type="button" aria-label="Close image">×</button><img id="fullSlipImage" alt="Uploaded slip"></div></body></html>
