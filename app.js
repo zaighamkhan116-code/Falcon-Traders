@@ -29,7 +29,7 @@ function purchasedAmount(r){return Number(r.paymentAmount||0)}
 function soldAmount(r){return Number(r.totalSoldAmount||0)}
 function hasProfit(r){return hasAmount(r.paymentAmount)&&hasAmount(r.totalSoldAmount)&&hasAmount(r.commissionPaid)}
 function profitAmount(r){return hasProfit(r)?Math.round(soldAmount(r)-purchasedAmount(r)-Number(r.commissionPaid)):0}
-function dueAmount(r){return soldAmount(r)}
+function dueAmount(r){const rentReceived=r.rentReceived==='No'?0:Math.max(0,Number(r.rentReceivedAmount||0));return Math.max(0,soldAmount(r)-rentReceived)}
 function renderPendingBreakdown(){const rows=pendingPaymentEntries().sort((a,b)=>(toIsoDate(b.date)||'').localeCompare(toIsoDate(a.date)||''));$('#pendingRows').innerHTML=rows.map(r=>'<tr><td>'+esc(formatDate(r.date))+'</td><td>'+esc(r.vehicle||'—')+'</td><td>'+esc(money(dueAmount(r)))+'</td></tr>').join('')||'<tr><td colspan="3" class="profit-empty">No pending payments.</td></tr>';$('#pendingListTotal').textContent=money(rows.reduce((sum,r)=>sum+dueAmount(r),0))}
 function receivedProfitEntries(){return monthCycles().flatMap(c=>c.rows).filter(r=>(r.vehicle)&&r.payment==='Received')}
 function renderProfitBreakdown(){const rows=receivedProfitEntries().sort((a,b)=>(toIsoDate(b.date)||'').localeCompare(toIsoDate(a.date)||''));$('#profitRows').innerHTML=rows.map(r=>'<tr><td>'+esc(formatDate(r.date))+'</td><td>'+esc(r.vehicle||'—')+'</td><td>'+(hasProfit(r)?esc(money(profitAmount(r))):'—')+'</td></tr>').join('')||'<tr><td colspan="3" class="profit-empty">No received payments yet.</td></tr>';$('#profitListTotal').textContent=money(rows.reduce((sum,r)=>sum+profitAmount(r),0))}
